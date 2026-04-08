@@ -13,7 +13,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **INFRA-02**: Pipeline Vite 8 + Tailwind CSS 4 + Alpine.js configurata e funzionante
 - [ ] **INFRA-03**: Layout globale con header sticky (logo, nav, language switch) e footer (contatti, orari, social)
 - [ ] **INFRA-04**: Design responsive mobile-first ispirato a Candore
-- [ ] **INFRA-05**: Cookie consent banner GDPR compliant
+- [ ] **INFRA-05**: Cookie consent con blocco preventivo (Garante Privacy 2021): banner con bottoni equiparati (Accetta/Rifiuta/Personalizza), consenso granulare per categoria (analytics, terze parti), blocco script GA4 e Google Maps prima del consenso, click-to-load per mappe, cookie 180gg. Riferimento implementazione: progetto tecnostudio (C:\Users\boxwe\Documents\GitHub\tecnostudio)
 
 ### Homepage
 

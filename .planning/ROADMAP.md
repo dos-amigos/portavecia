@@ -27,7 +27,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   1. Visiting the site shows a responsive page with sticky header (logo, navigation links, language switch) and footer (address, hours, social) on both mobile and desktop
   2. Clicking the language switch toggles between Italian and English versions, and all UI strings (navigation labels, footer text, button labels) appear in the selected language
   3. The Vite dev server runs with HMR and `npm run build` produces production assets without errors
-  4. A GDPR cookie consent banner appears on first visit and respects the user's choice
+  4. Cookie consent con blocco preventivo conforme Garante Privacy 2021: banner con bottoni equiparati (Accetta/Rifiuta/Personalizza), GA4 e Google Maps bloccati prima del consenso, consenso granulare per categoria, click-to-load per mappe embedded
   5. Content files use Kirby multilingual structure (`.it.txt` / `.en.txt`) from the first commit
 **Plans**: TBD
 **UI hint**: yes
