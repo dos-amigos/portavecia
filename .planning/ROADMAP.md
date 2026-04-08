@@ -29,7 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The Vite dev server runs with HMR and `npm run build` produces production assets without errors
   4. Cookie consent con blocco preventivo conforme Garante Privacy 2021: banner con bottoni equiparati (Accetta/Rifiuta/Personalizza), GA4 e Google Maps bloccati prima del consenso, consenso granulare per categoria, click-to-load per mappe embedded
   5. Content files use Kirby multilingual structure (`.it.txt` / `.en.txt`) from the first commit
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 01-01-PLAN.md -- Kirby 5 scaffolding + multilingual IT/EN + Vite/Tailwind/Alpine pipeline
+- [ ] 01-02-PLAN.md -- Global layout: header, footer, nav, language switch, responsive Candore styling
+- [ ] 01-03-PLAN.md -- Cookie consent system (Garante Privacy 2021 compliant)
 **UI hint**: yes
 
 ### Phase 2: Core Pages
@@ -73,7 +77,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Global Layout | 0/TBD | Not started | - |
+| 1. Foundation and Global Layout | 0/3 | Not started | - |
 | 2. Core Pages | 0/TBD | Not started | - |
 | 3. Engagement Features | 0/TBD | Not started | - |
 | 4. SEO and Performance | 0/TBD | Not started | - |
