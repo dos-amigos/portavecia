@@ -105,46 +105,46 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | TBD | Pending |
-| INFRA-02 | TBD | Pending |
-| INFRA-03 | TBD | Pending |
-| INFRA-04 | TBD | Pending |
-| INFRA-05 | TBD | Pending |
-| HOME-01 | TBD | Pending |
-| HOME-02 | TBD | Pending |
-| HOME-03 | TBD | Pending |
-| HOME-04 | TBD | Pending |
-| ABOUT-01 | TBD | Pending |
-| ABOUT-02 | TBD | Pending |
-| MENU-01 | TBD | Pending |
-| MENU-02 | TBD | Pending |
-| MENU-03 | TBD | Pending |
-| WINE-01 | TBD | Pending |
-| WINE-02 | TBD | Pending |
-| WINE-03 | TBD | Pending |
-| GALL-01 | TBD | Pending |
-| GALL-02 | TBD | Pending |
-| GALL-03 | TBD | Pending |
-| EVNT-01 | TBD | Pending |
-| EVNT-02 | TBD | Pending |
-| EVNT-03 | TBD | Pending |
-| CONT-01 | TBD | Pending |
-| CONT-02 | TBD | Pending |
-| CONT-03 | TBD | Pending |
-| CONT-04 | TBD | Pending |
-| SEO-01 | TBD | Pending |
-| SEO-02 | TBD | Pending |
-| SEO-03 | TBD | Pending |
-| SEO-04 | TBD | Pending |
-| LANG-01 | TBD | Pending |
-| LANG-02 | TBD | Pending |
-| LANG-03 | TBD | Pending |
+| INFRA-01 | Phase 1 | Pending |
+| INFRA-02 | Phase 1 | Pending |
+| INFRA-03 | Phase 1 | Pending |
+| INFRA-04 | Phase 1 | Pending |
+| INFRA-05 | Phase 1 | Pending |
+| LANG-02 | Phase 1 | Pending |
+| LANG-03 | Phase 1 | Pending |
+| HOME-01 | Phase 2 | Pending |
+| HOME-02 | Phase 2 | Pending |
+| HOME-03 | Phase 2 | Pending |
+| HOME-04 | Phase 2 | Pending |
+| ABOUT-01 | Phase 2 | Pending |
+| ABOUT-02 | Phase 2 | Pending |
+| MENU-01 | Phase 2 | Pending |
+| MENU-02 | Phase 2 | Pending |
+| MENU-03 | Phase 2 | Pending |
+| WINE-01 | Phase 2 | Pending |
+| WINE-02 | Phase 2 | Pending |
+| WINE-03 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Pending |
+| CONT-02 | Phase 2 | Pending |
+| CONT-03 | Phase 2 | Pending |
+| CONT-04 | Phase 2 | Pending |
+| LANG-01 | Phase 2 | Pending |
+| GALL-01 | Phase 3 | Pending |
+| GALL-02 | Phase 3 | Pending |
+| GALL-03 | Phase 3 | Pending |
+| EVNT-01 | Phase 3 | Pending |
+| EVNT-02 | Phase 3 | Pending |
+| EVNT-03 | Phase 3 | Pending |
+| SEO-01 | Phase 4 | Pending |
+| SEO-02 | Phase 4 | Pending |
+| SEO-03 | Phase 4 | Pending |
+| SEO-04 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 34 total
-- Mapped to phases: 0
-- Unmapped: 34 ⚠️
+- Mapped to phases: 34
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-04-08*
-*Last updated: 2026-04-08 after initial definition*
+*Last updated: 2026-04-08 after roadmap creation*
