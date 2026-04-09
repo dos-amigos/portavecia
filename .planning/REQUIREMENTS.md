@@ -47,9 +47,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Eventi
 
-- [ ] **EVNT-01**: Pagina eventi con lista serate speciali, degustazioni, eventi stagionali
-- [ ] **EVNT-02**: Ogni evento con data, descrizione, immagine
-- [ ] **EVNT-03**: Gestibile da Kirby Panel
+- [x] **EVNT-01**: Pagina eventi con lista serate speciali, degustazioni, eventi stagionali
+- [x] **EVNT-02**: Ogni evento con data, descrizione, immagine
+- [x] **EVNT-03**: Gestibile da Kirby Panel
 
 ### Dove Trovarci / Contatti
 
@@ -132,9 +132,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | GALL-01 | Phase 3 | Pending |
 | GALL-02 | Phase 3 | Pending |
 | GALL-03 | Phase 3 | Pending |
-| EVNT-01 | Phase 3 | Pending |
-| EVNT-02 | Phase 3 | Pending |
-| EVNT-03 | Phase 3 | Pending |
+| EVNT-01 | Phase 3 | Complete |
+| EVNT-02 | Phase 3 | Complete |
+| EVNT-03 | Phase 3 | Complete |
 | SEO-01 | Phase 4 | Pending |
 | SEO-02 | Phase 4 | Pending |
 | SEO-03 | Phase 4 | Pending |

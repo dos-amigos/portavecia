@@ -79,5 +79,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Foundation and Global Layout | 0/3 | Not started | - |
 | 2. Core Pages | 0/TBD | Not started | - |
-| 3. Engagement Features | 0/TBD | Not started | - |
+| 3. Engagement Features | 1/2 | In progress | - |
 | 4. SEO and Performance | 0/TBD | Not started | - |
