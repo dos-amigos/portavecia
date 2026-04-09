@@ -13,7 +13,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **INFRA-02**: Pipeline Vite 8 + Tailwind CSS 4 + Alpine.js configurata e funzionante
 - [ ] **INFRA-03**: Layout globale con header sticky (logo, nav, language switch) e footer (contatti, orari, social)
 - [ ] **INFRA-04**: Design responsive mobile-first ispirato a Candore
-- [ ] **INFRA-05**: Cookie consent con blocco preventivo (Garante Privacy 2021): banner con bottoni equiparati (Accetta/Rifiuta/Personalizza), consenso granulare per categoria (analytics, terze parti), blocco script GA4 e Google Maps prima del consenso, click-to-load per mappe, cookie 180gg. Riferimento implementazione: progetto tecnostudio (C:\Users\boxwe\Documents\GitHub\tecnostudio)
+- [x] **INFRA-05**: Cookie consent con blocco preventivo (Garante Privacy 2021): banner con bottoni equiparati (Accetta/Rifiuta/Personalizza), consenso granulare per categoria (analytics, terze parti), blocco script GA4 e Google Maps prima del consenso, click-to-load per mappe, cookie 180gg. Riferimento implementazione: progetto tecnostudio (C:\Users\boxwe\Documents\GitHub\tecnostudio)
 
 ### Homepage
 
@@ -109,7 +109,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-02 | Phase 1 | Complete |
 | INFRA-03 | Phase 1 | Pending |
 | INFRA-04 | Phase 1 | Pending |
-| INFRA-05 | Phase 1 | Pending |
+| INFRA-05 | Phase 1 | Complete |
 | LANG-02 | Phase 1 | Pending |
 | LANG-03 | Phase 1 | Pending |
 | HOME-01 | Phase 2 | Pending |

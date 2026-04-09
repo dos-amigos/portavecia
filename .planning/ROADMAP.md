@@ -12,7 +12,7 @@ Build a bilingual (IT/EN) multi-page website for Porta Vecia enoteca using Kirby
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation and Global Layout** - Kirby 5 multilingual setup, Vite/Tailwind pipeline, header/footer/nav, language switch, responsive base, cookie consent
+- [x] **Phase 1: Foundation and Global Layout** - Kirby 5 multilingual setup, Vite/Tailwind pipeline, header/footer/nav, language switch, responsive base, cookie consent (completed 2026-04-09)
 - [ ] **Phase 2: Core Pages** - Homepage, Chi Siamo, Menu, Vini, and Contatti pages with full content models, templates, and bilingual content
 - [ ] **Phase 3: Engagement Features** - Photo gallery with lightbox/categories and events page with management
 - [ ] **Phase 4: SEO and Performance** - Meta tags, structured data, hreflang, image optimization, lazy loading
@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md -- Kirby 5 scaffolding + multilingual IT/EN + Vite/Tailwind/Alpine pipeline
 - [x] 01-02-PLAN.md -- Global layout: header, footer, nav, language switch, responsive Candore styling
-- [ ] 01-03-PLAN.md -- Cookie consent system (Garante Privacy 2021 compliant)
+- [x] 01-03-PLAN.md -- Cookie consent system (Garante Privacy 2021 compliant)
 **UI hint**: yes
 
 ### Phase 2: Core Pages
@@ -77,7 +77,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Global Layout | 0/3 | Not started | - |
+| 1. Foundation and Global Layout | 3/3 | Complete   | 2026-04-09 |
 | 2. Core Pages | 0/TBD | Not started | - |
 | 3. Engagement Features | 0/TBD | Not started | - |
 | 4. SEO and Performance | 0/TBD | Not started | - |
