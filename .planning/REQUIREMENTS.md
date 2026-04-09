@@ -29,9 +29,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Menu / Cucina
 
-- [ ] **MENU-01**: Pagina menu HTML nativo con categorie, nome piatto, descrizione, prezzo (stile Candore menubook)
-- [ ] **MENU-02**: Suggerimenti abbinamento vino per i piatti principali
-- [ ] **MENU-03**: Tutto editabile da Kirby Panel (aggiungere/rimuovere/modificare piatti)
+- [x] **MENU-01**: Pagina menu HTML nativo con categorie, nome piatto, descrizione, prezzo (stile Candore menubook)
+- [x] **MENU-02**: Suggerimenti abbinamento vino per i piatti principali
+- [x] **MENU-03**: Tutto editabile da Kirby Panel (aggiungere/rimuovere/modificare piatti)
 
 ### Vini
 
@@ -118,9 +118,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-04 | Phase 2 | Pending |
 | ABOUT-01 | Phase 2 | Pending |
 | ABOUT-02 | Phase 2 | Pending |
-| MENU-01 | Phase 2 | Pending |
-| MENU-02 | Phase 2 | Pending |
-| MENU-03 | Phase 2 | Pending |
+| MENU-01 | Phase 2 | Complete |
+| MENU-02 | Phase 2 | Complete |
+| MENU-03 | Phase 2 | Complete |
 | WINE-01 | Phase 2 | Pending |
 | WINE-02 | Phase 2 | Pending |
 | WINE-03 | Phase 2 | Pending |
