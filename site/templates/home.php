@@ -1,10 +1,8 @@
 <?php snippet('layout/header') ?>
-<main class="min-h-screen">
-  <div class="max-w-4xl mx-auto px-4 py-16">
-    <h1 class="font-heading text-4xl text-primary mb-8"><?= $page->title() ?></h1>
-    <div class="prose prose-invert">
-      <?= $page->text()->kirbytext() ?>
-    </div>
-  </div>
+<main>
+  <?php snippet('sections/hero-video', ['page' => $page, 'whatsapp' => $whatsapp]) ?>
+  <?php snippet('sections/section-teaser', ['page' => $page]) ?>
+  <?php snippet('sections/section-preview', ['page' => $page, 'site' => $site]) ?>
+  <?php snippet('sections/section-story', ['page' => $page]) ?>
 </main>
 <?php snippet('layout/footer') ?>

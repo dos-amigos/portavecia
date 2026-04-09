@@ -27,5 +27,11 @@ return [
         'cookie.always_active' => 'Always active',
         'cookie.back' => 'Back',
         'cookie.policy_link' => 'Cookie Policy',
+        'home.whatsapp_cta' => 'Book on WhatsApp',
+        'home.featured' => 'Our Stars',
+        'home.featured_dishes' => 'From the Kitchen',
+        'home.featured_wines' => 'From the Cellar',
+        'home.discover_menu' => 'Discover the Menu',
+        'home.discover_wines' => 'Discover the Wines',
     ],
 ];
