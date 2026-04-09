@@ -24,8 +24,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Chi Siamo
 
-- [ ] **ABOUT-01**: Pagina con storia del locale, filosofia, foto interni/plateatico
-- [ ] **ABOUT-02**: Sezione dedicata al concept fusion "Due Tradizioni, Un Tavolo"
+- [x] **ABOUT-01**: Pagina con storia del locale, filosofia, foto interni/plateatico
+- [x] **ABOUT-02**: Sezione dedicata al concept fusion "Due Tradizioni, Un Tavolo"
 
 ### Menu / Cucina
 
@@ -53,10 +53,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Dove Trovarci / Contatti
 
-- [ ] **CONT-01**: Mappa embedded (Google Maps o OpenStreetMap)
-- [ ] **CONT-02**: Orari di apertura ben visibili e editabili da backend
-- [ ] **CONT-03**: Bottoni WhatsApp e telefono one-tap
-- [ ] **CONT-04**: Indirizzo completo con indicazioni
+- [x] **CONT-01**: Mappa embedded (Google Maps o OpenStreetMap)
+- [x] **CONT-02**: Orari di apertura ben visibili e editabili da backend
+- [x] **CONT-03**: Bottoni WhatsApp e telefono one-tap
+- [x] **CONT-04**: Indirizzo completo con indicazioni
 
 ### SEO e Performance
 
@@ -116,18 +116,18 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-02 | Phase 2 | Pending |
 | HOME-03 | Phase 2 | Pending |
 | HOME-04 | Phase 2 | Pending |
-| ABOUT-01 | Phase 2 | Pending |
-| ABOUT-02 | Phase 2 | Pending |
+| ABOUT-01 | Phase 2 | Complete |
+| ABOUT-02 | Phase 2 | Complete |
 | MENU-01 | Phase 2 | Pending |
 | MENU-02 | Phase 2 | Pending |
 | MENU-03 | Phase 2 | Pending |
 | WINE-01 | Phase 2 | Pending |
 | WINE-02 | Phase 2 | Pending |
 | WINE-03 | Phase 2 | Pending |
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
-| CONT-04 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Complete |
+| CONT-02 | Phase 2 | Complete |
+| CONT-03 | Phase 2 | Complete |
+| CONT-04 | Phase 2 | Complete |
 | LANG-01 | Phase 2 | Pending |
 | GALL-01 | Phase 3 | Pending |
 | GALL-02 | Phase 3 | Pending |
