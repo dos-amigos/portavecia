@@ -38,5 +38,8 @@ return [
         'menu.secondi' => 'Main Courses',
         'menu.zuppe' => 'Soups',
         'menu.dolci' => 'Desserts',
+        'contact.address' => 'Address',
+        'contact.directions' => 'Directions',
+        'contact.call' => 'Call',
     ],
 ];

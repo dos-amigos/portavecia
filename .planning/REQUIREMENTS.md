@@ -17,21 +17,21 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Homepage
 
-- [x] **HOME-01**: Hero section con immagine forte del locale/piatti e CTA prenotazione WhatsApp
-- [x] **HOME-02**: Sezione teaser "fusion concept" — anteprima dell'incontro vino+cucina cinese
-- [x] **HOME-03**: Anteprima vini e piatti in evidenza con link alle rispettive pagine
-- [x] **HOME-04**: Sezione "L'Esperienza" — storytelling visivo dell'esperienza al locale
+- [ ] **HOME-01**: Hero section con immagine forte del locale/piatti e CTA prenotazione WhatsApp
+- [ ] **HOME-02**: Sezione teaser "fusion concept" — anteprima dell'incontro vino+cucina cinese
+- [ ] **HOME-03**: Anteprima vini e piatti in evidenza con link alle rispettive pagine
+- [ ] **HOME-04**: Sezione "L'Esperienza" — storytelling visivo dell'esperienza al locale
 
 ### Chi Siamo
 
-- [ ] **ABOUT-01**: Pagina con storia del locale, filosofia, foto interni/plateatico
-- [ ] **ABOUT-02**: Sezione dedicata al concept fusion "Due Tradizioni, Un Tavolo"
+- [x] **ABOUT-01**: Pagina con storia del locale, filosofia, foto interni/plateatico
+- [x] **ABOUT-02**: Sezione dedicata al concept fusion "Due Tradizioni, Un Tavolo"
 
 ### Menu / Cucina
 
-- [x] **MENU-01**: Pagina menu HTML nativo con categorie, nome piatto, descrizione, prezzo (stile Candore menubook)
-- [x] **MENU-02**: Suggerimenti abbinamento vino per i piatti principali
-- [x] **MENU-03**: Tutto editabile da Kirby Panel (aggiungere/rimuovere/modificare piatti)
+- [ ] **MENU-01**: Pagina menu HTML nativo con categorie, nome piatto, descrizione, prezzo (stile Candore menubook)
+- [ ] **MENU-02**: Suggerimenti abbinamento vino per i piatti principali
+- [ ] **MENU-03**: Tutto editabile da Kirby Panel (aggiungere/rimuovere/modificare piatti)
 
 ### Vini
 
@@ -53,10 +53,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Dove Trovarci / Contatti
 
-- [ ] **CONT-01**: Mappa embedded (Google Maps o OpenStreetMap)
-- [ ] **CONT-02**: Orari di apertura ben visibili e editabili da backend
-- [ ] **CONT-03**: Bottoni WhatsApp e telefono one-tap
-- [ ] **CONT-04**: Indirizzo completo con indicazioni
+- [x] **CONT-01**: Mappa embedded (Google Maps o OpenStreetMap)
+- [x] **CONT-02**: Orari di apertura ben visibili e editabili da backend
+- [x] **CONT-03**: Bottoni WhatsApp e telefono one-tap
+- [x] **CONT-04**: Indirizzo completo con indicazioni
 
 ### SEO e Performance
 
@@ -67,7 +67,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Bilingue
 
-- [x] **LANG-01**: Tutti i contenuti disponibili in italiano e inglese
+- [ ] **LANG-01**: Tutti i contenuti disponibili in italiano e inglese
 - [ ] **LANG-02**: Language switch visibile in header
 - [ ] **LANG-03**: Stringhe UI tradotte tramite sistema t() di Kirby
 
@@ -112,23 +112,23 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-05 | Phase 1 | Complete |
 | LANG-02 | Phase 1 | Pending |
 | LANG-03 | Phase 1 | Pending |
-| HOME-01 | Phase 2 | Complete |
-| HOME-02 | Phase 2 | Complete |
-| HOME-03 | Phase 2 | Complete |
-| HOME-04 | Phase 2 | Complete |
-| ABOUT-01 | Phase 2 | Pending |
-| ABOUT-02 | Phase 2 | Pending |
-| MENU-01 | Phase 2 | Complete |
-| MENU-02 | Phase 2 | Complete |
-| MENU-03 | Phase 2 | Complete |
+| HOME-01 | Phase 2 | Pending |
+| HOME-02 | Phase 2 | Pending |
+| HOME-03 | Phase 2 | Pending |
+| HOME-04 | Phase 2 | Pending |
+| ABOUT-01 | Phase 2 | Complete |
+| ABOUT-02 | Phase 2 | Complete |
+| MENU-01 | Phase 2 | Pending |
+| MENU-02 | Phase 2 | Pending |
+| MENU-03 | Phase 2 | Pending |
 | WINE-01 | Phase 2 | Pending |
 | WINE-02 | Phase 2 | Pending |
 | WINE-03 | Phase 2 | Pending |
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
-| CONT-04 | Phase 2 | Pending |
-| LANG-01 | Phase 2 | Complete |
+| CONT-01 | Phase 2 | Complete |
+| CONT-02 | Phase 2 | Complete |
+| CONT-03 | Phase 2 | Complete |
+| CONT-04 | Phase 2 | Complete |
+| LANG-01 | Phase 2 | Pending |
 | GALL-01 | Phase 3 | Pending |
 | GALL-02 | Phase 3 | Pending |
 | GALL-03 | Phase 3 | Pending |

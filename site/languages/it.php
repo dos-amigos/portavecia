@@ -39,5 +39,8 @@ return [
         'menu.secondi' => 'Secondi Piatti',
         'menu.zuppe' => 'Zuppe',
         'menu.dolci' => 'Dolci',
+        'contact.address' => 'Indirizzo',
+        'contact.directions' => 'Indicazioni',
+        'contact.call' => 'Chiama',
     ],
 ];

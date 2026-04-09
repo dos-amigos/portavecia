@@ -1,0 +1,30 @@
+title: Contatti
+fields:
+  headline:
+    label: Titolo pagina
+    type: text
+    required: true
+  intro:
+    label: Introduzione
+    type: textarea
+    size: small
+  map_lat:
+    label: Latitudine
+    type: text
+    width: 1/2
+    help: "Es: 45.2272"
+    translate: false
+  map_lng:
+    label: Longitudine
+    type: text
+    width: 1/2
+    help: "Es: 11.6574"
+    translate: false
+  map_popup:
+    label: Testo popup mappa
+    type: text
+  directions_url:
+    label: URL Indicazioni (Google Maps)
+    type: url
+    translate: false
+    help: "Link a Google Maps con le coordinate del locale"
