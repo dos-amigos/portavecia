@@ -27,5 +27,8 @@ return [
         'cookie.always_active' => 'Always active',
         'cookie.back' => 'Back',
         'cookie.policy_link' => 'Cookie Policy',
+        'contact.address' => 'Address',
+        'contact.directions' => 'Directions',
+        'contact.call' => 'Call',
     ],
 ];

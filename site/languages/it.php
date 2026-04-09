@@ -28,5 +28,8 @@ return [
         'cookie.always_active' => 'Sempre attivi',
         'cookie.back' => 'Indietro',
         'cookie.policy_link' => 'Cookie Policy',
+        'contact.address' => 'Indirizzo',
+        'contact.directions' => 'Indicazioni',
+        'contact.call' => 'Chiama',
     ],
 ];
