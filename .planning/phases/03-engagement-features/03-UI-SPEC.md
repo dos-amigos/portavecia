@@ -22,7 +22,7 @@ created: 2026-04-09
 | Component library | none (server-rendered PHP templates + Alpine.js) |
 | Icon library | none (Unicode emoji for wine glass, inline SVG for arrows) |
 | Font heading | Playfair Display (self-hosted via @fontsource), 400 + 700 |
-| Font body | Raleway (self-hosted via @fontsource), 400 + 600 |
+| Font body | Raleway (self-hosted via @fontsource), 400 + 700 |
 
 ---
 
@@ -49,15 +49,17 @@ Exceptions: Gallery masonry gap uses 12px (gap-3) for tighter visual rhythm in p
 | Role | Size | Weight | Line Height | Font |
 |------|------|--------|-------------|------|
 | Body | 14px (text-sm) | 400 | 1.5 | Raleway |
-| Label | 12px (text-xs) | 600 | 1.4 | Raleway |
+| Label | 12px (text-xs) | 700 | 1.4 | Raleway |
 | Heading | 20px (text-xl) | 400 | 1.2 | Playfair Display |
 | Display | 28px (text-2xl md:text-3xl) | 700 | 1.2 | Playfair Display |
+
+**Weights used: 2 only — 400 (regular) and 700 (bold).** No intermediate weights (600/semibold) are permitted in this phase.
 
 Usage in this phase:
 - **Display:** Page titles ("Galleria", "Eventi")
 - **Heading:** Event card titles, lightbox captions
 - **Body:** Event descriptions, photo captions, filter button labels
-- **Label:** Event date/time metadata, photo counter ("3 / 12"), category tags, "Eventi Passati" badge
+- **Label:** Event date/time metadata, photo counter ("3 / 12"), category tags, active filter labels, "Eventi Passati" badge
 
 ---
 
@@ -77,6 +79,17 @@ Accent reserved for: active filter tab background, event date display, "Prenota 
 
 ---
 
+## Focal Point Declaration
+
+Each page template declares a single primary visual anchor that draws the visitor's eye first.
+
+| Template | Focal Point | Rationale |
+|----------|-------------|-----------|
+| Gallery | Masonry photo grid filling the viewport below the filter bar | The photos are the content. The filter bar is secondary navigation; the grid itself is the immediate draw. Dense visual mass of images creates strong focal pull. |
+| Events | Upcoming event card(s) with accent-colored date badge | The date badge in accent color breaks the neutral palette and signals "this is next." Past events are dimmed to 60% opacity, further directing attention to upcoming cards. |
+
+---
+
 ## Component Inventory
 
 ### Gallery Page
@@ -85,8 +98,8 @@ Accent reserved for: active filter tab background, event date display, "Prenota 
 |-----------|-----------------|----------|
 | Page header | `.section-padding .container-site` + Display title centered | Static, consistent with other pages |
 | Filter bar | Horizontal flex row, gap-2, centered above grid | Alpine.js x-data for active filter state |
-| Filter button (inactive) | `px-4 py-2 text-sm font-semibold text-light/70 bg-dark/50 border border-light/10 rounded-full uppercase tracking-wider cursor-pointer transition-colors` | Hover: text-light |
-| Filter button (active) | `px-4 py-2 text-sm font-semibold text-dark bg-primary rounded-full uppercase tracking-wider` | Solid accent background |
+| Filter button (inactive) | `px-4 py-2 text-sm font-bold text-light/70 bg-dark/50 border border-light/10 rounded-full uppercase tracking-wider cursor-pointer transition-colors` | Hover: text-light |
+| Filter button (active) | `px-4 py-2 text-sm font-bold text-dark bg-primary rounded-full uppercase tracking-wider` | Solid accent background |
 | Masonry grid | CSS `columns-2 md:columns-3 lg:columns-4 gap-3` on container | Each item has `break-inside-avoid mb-3` |
 | Photo item | `rounded-lg overflow-hidden cursor-pointer group` | Hover: `group-hover:scale-105` on image with `transition-transform duration-300` |
 | Photo overlay (hover) | `absolute inset-0 bg-dark/40 opacity-0 group-hover:opacity-100 transition-opacity` with caption text at bottom | Shows caption on hover |
@@ -101,7 +114,7 @@ Accent reserved for: active filter tab background, event date display, "Prenota 
 | Event card (upcoming) | `bg-dark/50 border border-light/10 rounded-lg overflow-hidden flex flex-col md:flex-row` | Same structure as dish-card.php |
 | Event card image | `md:w-1/3 h-48 md:h-auto` with `object-cover` | 3:2 aspect ratio photo |
 | Event card content | `p-6 flex-1 flex flex-col justify-between` | Title, date/time, description, CTA |
-| Event date badge | `text-primary font-semibold text-sm uppercase tracking-wider` | Format: "15 Maggio 2026 - ore 19:30" |
+| Event date badge | `text-primary font-bold text-sm uppercase tracking-wider` | Format: "15 Maggio 2026 - ore 19:30" |
 | Event CTA (prenota) | `.btn-primary` | Links to WhatsApp with pre-filled message about event |
 | Event card (past) | Same as upcoming + `opacity-60` on entire card | Visually dimmed |
 | Past events divider | `border-t border-light/10 mt-12 pt-8` | Horizontal rule + spacing before past section |
