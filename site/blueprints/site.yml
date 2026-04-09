@@ -1,0 +1,60 @@
+title: Porta Vecia
+tabs:
+  content:
+    label: Contenuto
+    fields:
+      phone:
+        label: Telefono
+        type: tel
+        translate: false
+      whatsapp:
+        label: WhatsApp
+        type: tel
+        translate: false
+      email:
+        label: Email
+        type: email
+        translate: false
+      address:
+        label: Indirizzo
+        type: textarea
+        translate: false
+      ga4MeasurementId:
+        label: GA4 Measurement ID
+        type: text
+        translate: false
+        help: "Es: G-XXXXXXXXXX"
+  hours:
+    label: Orari
+    fields:
+      hours:
+        label: Orari di apertura
+        type: structure
+        fields:
+          day:
+            label: Giorno
+            type: text
+            width: 1/2
+          time:
+            label: Orario
+            type: text
+            width: 1/2
+  social:
+    label: Social
+    fields:
+      social:
+        label: Social Media
+        type: structure
+        fields:
+          platform:
+            label: Piattaforma
+            type: select
+            options:
+              instagram: Instagram
+              facebook: Facebook
+              tripadvisor: TripAdvisor
+            width: 1/2
+          url:
+            label: URL
+            type: url
+            width: 1/2

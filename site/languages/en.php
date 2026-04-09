@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'code' => 'en',
+    'default' => false,
+    'direction' => 'ltr',
+    'locale' => 'en_US.utf8',
+    'name' => 'English',
+    'translations' => [
+        'nav.home' => 'Home',
+        'nav.about' => 'About Us',
+        'nav.menu' => 'Kitchen',
+        'nav.wines' => 'Wines',
+        'nav.gallery' => 'Gallery',
+        'nav.events' => 'Events',
+        'nav.contact' => 'Contact',
+        'footer.hours' => 'Hours',
+        'footer.follow' => 'Follow Us',
+        'cookie.message' => 'We use necessary technical cookies and, with your consent, analytics and third-party cookies.',
+        'cookie.accept' => 'Accept all',
+        'cookie.reject' => 'Reject all',
+        'cookie.customize' => 'Customize',
+        'cookie.save' => 'Save preferences',
+        'cookie.technical' => 'Technical cookies',
+        'cookie.analytics' => 'Analytics cookies',
+        'cookie.thirdparty' => 'Third-party cookies',
+        'cookie.always_active' => 'Always active',
+        'cookie.back' => 'Back',
+        'cookie.policy_link' => 'Cookie Policy',
+    ],
+];
