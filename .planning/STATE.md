@@ -4,12 +4,12 @@ milestone: v1.0
 milestone_name: milestone
 status: executing
 stopped_at: Phase 2 context gathered
-last_updated: "2026-04-09T09:41:41.004Z"
-last_activity: 2026-04-09
+last_updated: "2026-04-09T10:12:15.260Z"
+last_activity: 2026-04-09 -- Phase 02 execution started
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 3
+  total_plans: 8
   completed_plans: 3
   percent: 66
 ---
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-08)
 
 **Core value:** Invitare i visitatori a scoprire Porta Vecia come esperienza unica: l'incontro tra enoteca italiana e cucina cinese autentica in un contesto storico suggestivo.
-**Current focus:** Phase 1 - Foundation and Global Layout
+**Current focus:** Phase 02 — core-pages
 
 ## Current Position
 
-Phase: 2 of 4 (core pages)
-Plan: Not started
-Status: Ready to execute
-Last activity: 2026-04-09
+Phase: 02 (core-pages) — EXECUTING
+Plan: 1 of 5
+Status: Executing Phase 02
+Last activity: 2026-04-09 -- Phase 02 execution started
 
 Progress: [======....] 66%
 
