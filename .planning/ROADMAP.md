@@ -12,7 +12,7 @@ Build a bilingual (IT/EN) multi-page website for Porta Vecia enoteca using Kirby
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [x] **Phase 1: Foundation and Global Layout** - Kirby 5 multilingual setup, Vite/Tailwind pipeline, header/footer/nav, language switch, responsive base, cookie consent (completed 2026-04-09)
+- [x] **Phase 1: Foundation and Global Layout** - Kirby 5 multilingual setup, Vite/Tailwind pipeline, header/footer/nav, language switch, responsive base, cookie consent (completed 2026-04-09)
 - [ ] **Phase 2: Core Pages** - Homepage, Chi Siamo, Menu, Vini, and Contatti pages with full content models, templates, and bilingual content
 - [ ] **Phase 3: Engagement Features** - Photo gallery with lightbox/categories and events page with management
 - [ ] **Phase 4: SEO and Performance** - Meta tags, structured data, hreflang, image optimization, lazy loading
@@ -46,7 +46,13 @@ Plans:
   3. Wine page shows a curated selection with bottle photo, name, origin, tasting notes, price, and food pairing suggestions, all editable from Panel
   4. Contact page shows an embedded map, clearly visible opening hours, one-tap WhatsApp and phone buttons, and full address with directions
   5. About page presents the story, philosophy, interior/plateatico photos, and the "Due Tradizioni, Un Tavolo" fusion concept
-**Plans**: TBD
+**Plans**: 5 plans
+Plans:
+- [ ] 02-01-PLAN.md -- Homepage: video hero, fusion teaser, featured previews, L'Esperienza, floating WhatsApp
+- [ ] 02-02-PLAN.md -- Menu/Cucina: dish cards by category with photos and wine pairings
+- [ ] 02-03-PLAN.md -- Vini: elegant vertical wine list with bottle photos and food pairings
+- [ ] 02-04-PLAN.md -- Chi Siamo + Contatti: alternating storytelling blocks and OpenStreetMap contact page
+- [ ] 02-05-PLAN.md -- Translation keys integration and visual checkpoint
 **UI hint**: yes
 
 ### Phase 3: Engagement Features
@@ -78,6 +84,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation and Global Layout | 3/3 | Complete   | 2026-04-09 |
-| 2. Core Pages | 0/TBD | Not started | - |
+| 2. Core Pages | 0/5 | Not started | - |
 | 3. Engagement Features | 0/TBD | Not started | - |
 | 4. SEO and Performance | 0/TBD | Not started | - |
