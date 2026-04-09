@@ -65,7 +65,7 @@ Plans:
   3. The bar owner can add, remove, and reorder gallery photos and manage events entirely from Kirby Panel
 **Plans**: 2 plans
 Plans:
-- [ ] 03-01-PLAN.md -- Gallery: masonry grid, category filters, GLightbox lightbox, 15 photos from _sources/
+- [x] 03-01-PLAN.md -- Gallery: masonry grid, category filters, GLightbox lightbox, 15 photos from _sources/
 - [ ] 03-02-PLAN.md -- Events: upcoming/past event cards, WhatsApp booking, 4 placeholder events
 **UI hint**: yes
 
@@ -88,5 +88,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Foundation and Global Layout | 3/3 | Complete   | 2026-04-09 |
 | 2. Core Pages | 0/5 | Not started | - |
-| 3. Engagement Features | 0/2 | Not started | - |
+| 3. Engagement Features | 1/2 | In progress | - |
 | 4. SEO and Performance | 0/TBD | Not started | - |

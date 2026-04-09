@@ -41,9 +41,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Gallery
 
-- [ ] **GALL-01**: Galleria fotografica con lightbox (stile Candore gallery)
-- [ ] **GALL-02**: Foto organizzabili per categoria (locale, piatti, vini, eventi)
-- [ ] **GALL-03**: Gestibile da Kirby Panel
+- [x] **GALL-01**: Galleria fotografica con lightbox (stile Candore gallery)
+- [x] **GALL-02**: Foto organizzabili per categoria (locale, piatti, vini, eventi)
+- [x] **GALL-03**: Gestibile da Kirby Panel
 
 ### Eventi
 
@@ -129,9 +129,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-03 | Phase 2 | Complete |
 | CONT-04 | Phase 2 | Complete |
 | LANG-01 | Phase 2 | Pending |
-| GALL-01 | Phase 3 | Pending |
-| GALL-02 | Phase 3 | Pending |
-| GALL-03 | Phase 3 | Pending |
+| GALL-01 | Phase 3 | Complete |
+| GALL-02 | Phase 3 | Complete |
+| GALL-03 | Phase 3 | Complete |
 | EVNT-01 | Phase 3 | Pending |
 | EVNT-02 | Phase 3 | Pending |
 | EVNT-03 | Phase 3 | Pending |
