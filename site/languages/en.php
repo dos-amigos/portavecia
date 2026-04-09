@@ -42,5 +42,7 @@ return [
         'contact.directions' => 'Directions',
         'contact.call' => 'Call',
         'wines.pairing' => 'Pairs with',
+        'cta.whatsapp' => 'Book on WhatsApp',
+        'whatsapp.default_message' => 'Hello! I would like to book a table at Porta Vecia.',
     ],
 ];

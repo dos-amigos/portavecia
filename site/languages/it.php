@@ -43,5 +43,7 @@ return [
         'contact.directions' => 'Indicazioni',
         'contact.call' => 'Chiama',
         'wines.pairing' => 'Abbinamento',
+        'cta.whatsapp' => 'Prenota su WhatsApp',
+        'whatsapp.default_message' => 'Ciao! Vorrei prenotare un tavolo da Porta Vecia.',
     ],
 ];
