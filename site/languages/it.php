@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'code' => 'it',
+    'default' => true,
+    'direction' => 'ltr',
+    'locale' => 'it_IT.utf8',
+    'name' => 'Italiano',
+    'url' => '/',
+    'translations' => [
+        'nav.home' => 'Home',
+        'nav.about' => 'Chi Siamo',
+        'nav.menu' => 'Cucina',
+        'nav.wines' => 'Vini',
+        'nav.gallery' => 'Galleria',
+        'nav.events' => 'Eventi',
+        'nav.contact' => 'Contatti',
+        'footer.hours' => 'Orari',
+        'footer.follow' => 'Seguici',
+        'cookie.message' => 'Utilizziamo cookie tecnici necessari e, con il tuo consenso, cookie analitici e di terze parti.',
+        'cookie.accept' => 'Accetta tutto',
+        'cookie.reject' => 'Rifiuta tutto',
+        'cookie.customize' => 'Personalizza',
+        'cookie.save' => 'Salva preferenze',
+        'cookie.technical' => 'Cookie tecnici',
+        'cookie.analytics' => 'Cookie analitici',
+        'cookie.thirdparty' => 'Cookie di terze parti',
+        'cookie.always_active' => 'Sempre attivi',
+        'cookie.back' => 'Indietro',
+        'cookie.policy_link' => 'Cookie Policy',
+    ],
+];
