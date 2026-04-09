@@ -1,14 +1,6 @@
 <?php snippet('layout/header') ?>
 <main>
-  <!-- Page header -->
-  <section class="section-padding bg-dark">
-    <div class="container-site text-center">
-      <h1 class="font-heading text-4xl md:text-5xl text-primary mb-4"><?= $page->headline() ?></h1>
-      <?php if ($page->intro()->isNotEmpty()): ?>
-        <p class="text-light/70 text-lg max-w-2xl mx-auto"><?= $page->intro() ?></p>
-      <?php endif ?>
-    </div>
-  </section>
+  <?php snippet('sections/page-hero', ['page' => $page]) ?>
 
   <!-- Split layout: map left, info right -->
   <section class="section-padding">

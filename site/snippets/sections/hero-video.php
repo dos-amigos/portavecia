@@ -27,8 +27,8 @@ $waNumber = $whatsapp ? str_replace(['+', ' '], '', $whatsapp) : '';
     ]) ?>
   <?php endif ?>
 
-  <!-- Dark overlay -->
-  <div class="absolute inset-0 bg-dark/60"></div>
+  <!-- Dark gradient overlay -->
+  <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.7) 100%);"></div>
 
   <!-- Content -->
   <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
