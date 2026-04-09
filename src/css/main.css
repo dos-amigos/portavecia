@@ -14,3 +14,47 @@
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Raleway', sans-serif;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-dark);
+    color: var(--color-light);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  a {
+    transition: color 0.2s ease;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block px-6 py-3 bg-primary text-dark font-semibold rounded-md
+           hover:bg-primary-dark transition-colors text-sm uppercase tracking-wider;
+  }
+
+  .btn-outline {
+    @apply inline-block px-6 py-3 border border-primary text-primary font-semibold rounded-md
+           hover:bg-primary hover:text-dark transition-colors text-sm uppercase tracking-wider;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .container-site {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+[x-cloak] {
+  display: none !important;
+}
