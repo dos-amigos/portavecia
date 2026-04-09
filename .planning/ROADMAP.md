@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 Plans:
 - [x] 01-01-PLAN.md -- Kirby 5 scaffolding + multilingual IT/EN + Vite/Tailwind/Alpine pipeline
-- [ ] 01-02-PLAN.md -- Global layout: header, footer, nav, language switch, responsive Candore styling
+- [x] 01-02-PLAN.md -- Global layout: header, footer, nav, language switch, responsive Candore styling
 - [ ] 01-03-PLAN.md -- Cookie consent system (Garante Privacy 2021 compliant)
 **UI hint**: yes
 

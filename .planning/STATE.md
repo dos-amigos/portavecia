@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-04-08)
 ## Current Position
 
 Phase: 1 of 4 (Foundation and Global Layout)
-Plan: 1 of 3 in current phase
-Status: Executing
-Last activity: 2026-04-09 -- Plan 01-01 completed (Kirby scaffold + Vite pipeline)
+Plan: 2 of 3 in current phase
+Status: Executing (checkpoint pending on 01-02 Task 3)
+Last activity: 2026-04-09 -- Plans 01-01 and 01-02 complete, awaiting human verification
 
-Progress: [#.........] 11%
+Progress: [======....] 66%
 
 ## Performance Metrics
 
@@ -44,9 +44,15 @@ Recent decisions affecting current work:
 
 - Multilingual IT/EN must be enabled from very first commit (Kirby pitfall -- retrofitting causes painful migrations)
 - content/ folder must be in .gitignore from day 1 (content/code deployment collision risk)
+<<<<<<< HEAD
 - kirby-helpers vite config uses entry/outDir format (v6.7.1)
 - Tailwind CSS 4: CSS-first @theme directive, no tailwind.config.js
 - Fonts self-hosted via @fontsource for GDPR compliance
+=======
+- Site controller (site.php) provides global data to all templates via Kirby controller pattern
+- Language switch uses $page->url($language->code()) for same-page language switching
+- Mobile menu uses Alpine.js x-data/x-show with x-transition
+>>>>>>> worktree-agent-a7dfa852
 
 ### Pending Todos
 
@@ -60,5 +66,9 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-09
+<<<<<<< HEAD
 Stopped at: Completed 01-01-PLAN.md (Kirby scaffold + Vite pipeline)
+=======
+Stopped at: Completed 01-02 Tasks 1-2, checkpoint pending Task 3 (human-verify)
+>>>>>>> worktree-agent-a7dfa852
 Resume file: None
