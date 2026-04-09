@@ -59,12 +59,16 @@
     </div>
 
     <!-- Copyright -->
-    <div class="mt-12 pt-8 border-t border-light/10 text-center">
+    <div class="mt-12 pt-8 border-t border-light/10 text-center space-y-2">
       <p class="text-light/50 text-sm">&copy; <?= date('Y') ?> Porta Vecia</p>
+      <button @click="$dispatch('cookie-reopen')" class="text-light/50 hover:text-primary text-xs underline transition-colors">
+        <?= t('cookie.policy_link') ?>
+      </button>
     </div>
   </div>
 </footer>
 
+  <?php snippet('components/cookie-banner') ?>
   <?= vite()->js('src/js/main.js') ?>
 </body>
 </html>
