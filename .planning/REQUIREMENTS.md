@@ -60,9 +60,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### SEO e Performance
 
-- [ ] **SEO-01**: Meta title/description per ogni pagina, editabili da backend
-- [ ] **SEO-02**: JSON-LD structured data (LocalBusiness/Restaurant)
-- [ ] **SEO-03**: Tag hreflang per versioni IT/EN
+- [x] **SEO-01**: Meta title/description per ogni pagina, editabili da backend
+- [x] **SEO-02**: JSON-LD structured data (LocalBusiness/Restaurant)
+- [x] **SEO-03**: Tag hreflang per versioni IT/EN
 - [ ] **SEO-04**: Ottimizzazione immagini con srcset e lazy loading
 
 ### Bilingue
@@ -135,9 +135,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EVNT-01 | Phase 3 | Complete |
 | EVNT-02 | Phase 3 | Complete |
 | EVNT-03 | Phase 3 | Complete |
-| SEO-01 | Phase 4 | Pending |
-| SEO-02 | Phase 4 | Pending |
-| SEO-03 | Phase 4 | Pending |
+| SEO-01 | Phase 4 | Complete |
+| SEO-02 | Phase 4 | Complete |
+| SEO-03 | Phase 4 | Complete |
 | SEO-04 | Phase 4 | Pending |
 
 **Coverage:**

@@ -70,7 +70,7 @@ Plans:
   3. Images use srcset with multiple sizes, WebP format where supported, and lazy loading -- gallery and menu pages load under 3 seconds on a 4G connection
 **Plans**: 2 plans
 Plans:
-- [ ] 04-01-PLAN.md -- SEO meta infrastructure: config, blueprints, header meta/hreflang, JSON-LD models, sitemap/robots
+- [x] 04-01-PLAN.md -- SEO meta infrastructure: config, blueprints, header meta/hreflang, JSON-LD models, sitemap/robots
 - [ ] 04-02-PLAN.md -- Image performance: responsive-image snippet, srcset/WebP, lazy loading across all templates
 
 ## Progress
