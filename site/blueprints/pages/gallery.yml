@@ -1,0 +1,26 @@
+title: Galleria
+tabs:
+  content:
+    label: Contenuto
+    fields:
+      headline:
+        label: Titolo pagina
+        type: text
+        required: true
+      intro:
+        label: Introduzione
+        type: textarea
+        size: small
+  photos:
+    label: Foto
+    sections:
+      gallery_photos:
+        label: Foto galleria
+        type: files
+        layout: cards
+        template: gallery-image
+        sortable: true
+        image:
+          cover: true
+          ratio: 3/2
+        info: "{{ file.category }}"

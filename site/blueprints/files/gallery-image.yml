@@ -1,0 +1,23 @@
+title: Foto Galleria
+accept:
+  mime: image/jpeg, image/png, image/webp
+fields:
+  caption:
+    label: Didascalia
+    type: text
+    translate: true
+  alt:
+    label: Testo alternativo
+    type: text
+    translate: true
+  category:
+    label: Categoria
+    type: select
+    required: true
+    default: locale
+    options:
+      locale: Locale
+      piatti: Piatti
+      vini: Vini
+      cucina: Cucina
+      eventi: Eventi
