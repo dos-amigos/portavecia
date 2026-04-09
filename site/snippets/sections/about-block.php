@@ -14,10 +14,13 @@ if ($title->isEmpty() && $text->isEmpty()) return;
     </div>
     <div class="<?= $reverse ? 'md:order-1' : '' ?>">
       <?php if ($img): ?>
-        <img src="<?= $img->thumb(['width' => 800, 'quality' => 80])->url() ?>"
-             alt="<?= $img->alt()->or($title) ?>"
-             class="rounded-lg w-full shadow-lg"
-             loading="lazy">
+        <?php snippet('components/responsive-image', [
+            'image' => $img,
+            'preset' => 'default',
+            'sizes' => '(min-width: 768px) 50vw, 100vw',
+            'alt' => $img->alt()->or($title)->value(),
+            'class' => 'rounded-lg w-full shadow-lg',
+        ]) ?>
       <?php endif ?>
     </div>
   </div>

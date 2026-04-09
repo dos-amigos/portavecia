@@ -21,20 +21,22 @@ $experienceImage2 = $page->experience_image_2()->toFile();
       <!-- Images -->
       <div class="relative">
         <?php if ($experienceImage): ?>
-          <img
-            src="<?= $experienceImage->thumb(['width' => 600, 'quality' => 80])->url() ?>"
-            alt="<?= Str::esc($page->experience_title()->value()) ?>"
-            class="rounded-lg shadow-lg w-full"
-            loading="lazy"
-          >
+          <?php snippet('components/responsive-image', [
+              'image' => $experienceImage,
+              'preset' => 'default',
+              'sizes' => '(min-width: 768px) 50vw, 100vw',
+              'alt' => $page->experience_title()->value(),
+              'class' => 'rounded-lg shadow-lg w-full',
+          ]) ?>
         <?php endif ?>
         <?php if ($experienceImage2): ?>
-          <img
-            src="<?= $experienceImage2->thumb(['width' => 400, 'quality' => 80])->url() ?>"
-            alt="<?= Str::esc($page->experience_title()->value()) ?>"
-            class="rounded-lg shadow-lg w-2/3 -mt-16 ml-auto relative z-10 border-4 border-dark"
-            loading="lazy"
-          >
+          <?php snippet('components/responsive-image', [
+              'image' => $experienceImage2,
+              'preset' => 'default',
+              'sizes' => '(min-width: 768px) 33vw, 100vw',
+              'alt' => $page->experience_title()->value(),
+              'class' => 'rounded-lg shadow-lg w-2/3 -mt-16 ml-auto relative z-10 border-4 border-dark',
+          ]) ?>
         <?php endif ?>
       </div>
     </div>

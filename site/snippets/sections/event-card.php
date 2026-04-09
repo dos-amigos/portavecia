@@ -1,10 +1,13 @@
 <div class="bg-dark/50 border border-light/10 rounded-lg overflow-hidden flex flex-col md:flex-row<?= $isPast ? ' opacity-60' : '' ?>">
   <?php if ($photo = $event->photo()->toFile()): ?>
     <div class="md:w-1/3 h-48 md:h-auto">
-      <img src="<?= $photo->thumb(['width' => 400, 'height' => 300, 'crop' => true, 'quality' => 80])->url() ?>"
-           alt="<?= $event->title() ?>"
-           class="w-full h-full object-cover"
-           loading="lazy">
+      <?php snippet('components/responsive-image', [
+          'image' => $photo,
+          'preset' => 'card',
+          'sizes' => '(min-width: 768px) 33vw, 100vw',
+          'alt' => $event->title()->value(),
+          'class' => 'w-full h-full object-cover',
+      ]) ?>
     </div>
   <?php endif ?>
   <div class="p-6 flex-1 flex flex-col justify-between">

@@ -2,10 +2,13 @@
   <!-- Bottle photo (left) -->
   <?php if ($photo = $wine->photo()->toFile()): ?>
     <div class="md:w-1/4 flex-shrink-0">
-      <img src="<?= $photo->thumb(['width' => 300, 'height' => 450, 'crop' => false, 'quality' => 85])->url() ?>"
-           alt="<?= $wine->name() ?>"
-           class="w-full max-w-[200px] mx-auto md:mx-0 rounded-lg"
-           loading="lazy">
+      <?php snippet('components/responsive-image', [
+          'image' => $photo,
+          'preset' => 'default',
+          'sizes' => '(min-width: 768px) 20vw, 40vw',
+          'alt' => $wine->name()->value(),
+          'class' => 'w-full max-w-[200px] mx-auto md:mx-0 rounded-lg',
+      ]) ?>
     </div>
   <?php endif ?>
 

@@ -7,12 +7,13 @@ $teaserImage = $page->teaser_image()->toFile();
       <!-- Image -->
       <div>
         <?php if ($teaserImage): ?>
-          <img
-            src="<?= $teaserImage->thumb(['width' => 800, 'quality' => 80])->url() ?>"
-            alt="<?= Str::esc($page->teaser_title()->value()) ?>"
-            class="rounded-lg w-full"
-            loading="lazy"
-          >
+          <?php snippet('components/responsive-image', [
+              'image' => $teaserImage,
+              'preset' => 'default',
+              'sizes' => '(min-width: 768px) 50vw, 100vw',
+              'alt' => $page->teaser_title()->value(),
+              'class' => 'rounded-lg w-full',
+          ]) ?>
         <?php endif ?>
       </div>
       <!-- Text -->

@@ -59,14 +59,13 @@
                 data-category="<?= $image->category()->value() ?: 'locale' ?>"
                 data-title="<?= $image->caption() ?>"
               >
-                <img
-                  src="<?= $image->thumb(['width' => 600, 'quality' => 80])->url() ?>"
-                  alt="<?= $image->alt()->or($image->caption()) ?>"
-                  class="w-full transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                  width="<?= $image->thumb(['width' => 600, 'quality' => 80])->width() ?>"
-                  height="<?= $image->thumb(['width' => 600, 'quality' => 80])->height() ?>"
-                />
+                <?php snippet('components/responsive-image', [
+                    'image' => $image,
+                    'preset' => 'gallery',
+                    'sizes' => '(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw',
+                    'alt' => $image->alt()->or($image->caption())->value(),
+                    'class' => 'w-full transition-transform duration-300 group-hover:scale-105',
+                ]) ?>
                 <div class="absolute inset-0 bg-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                   <span class="text-light text-sm"><?= $image->caption() ?></span>
                 </div>

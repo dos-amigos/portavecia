@@ -1,10 +1,13 @@
 <div class="bg-dark/50 border border-light/10 rounded-lg overflow-hidden flex flex-col md:flex-row">
   <?php if ($photo = $dish->photo()->toFile()): ?>
     <div class="md:w-1/3 h-48 md:h-auto">
-      <img src="<?= $photo->thumb(['width' => 400, 'height' => 400, 'crop' => true, 'quality' => 80])->url() ?>"
-           alt="<?= $dish->dish_name() ?>"
-           class="w-full h-full object-cover"
-           loading="lazy">
+      <?php snippet('components/responsive-image', [
+          'image' => $photo,
+          'preset' => 'card',
+          'sizes' => '(min-width: 768px) 25vw, 50vw',
+          'alt' => $dish->dish_name()->value(),
+          'class' => 'w-full h-full object-cover',
+      ]) ?>
     </div>
   <?php endif ?>
   <div class="p-6 flex-1 flex flex-col justify-between">

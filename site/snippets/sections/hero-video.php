@@ -17,12 +17,14 @@ $waNumber = $whatsapp ? str_replace(['+', ' '], '', $whatsapp) : '';
 
   <!-- Poster image fallback (mobile or no video) -->
   <?php if ($poster): ?>
-    <img
-      src="<?= $poster->thumb(['width' => 1200, 'quality' => 80])->url() ?>"
-      alt="<?= Str::esc($page->hero_title()->value()) ?>"
-      class="absolute inset-0 w-full h-full object-cover <?= $video ? 'md:hidden' : '' ?>"
-      loading="eager"
-    >
+    <?php snippet('components/responsive-image', [
+        'image' => $poster,
+        'preset' => 'default',
+        'sizes' => '100vw',
+        'lazy' => false,
+        'alt' => $page->hero_title()->value(),
+        'class' => 'absolute inset-0 w-full h-full object-cover ' . ($video ? 'md:hidden' : ''),
+    ]) ?>
   <?php endif ?>
 
   <!-- Dark overlay -->
