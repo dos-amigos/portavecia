@@ -1,0 +1,41 @@
+Title: Events
+
+----
+
+Headline: Events
+
+----
+
+Intro: Special evenings, tastings, and moments to share
+
+----
+
+Events:
+-
+  title: Amarone Tasting
+  event_date: 2026-05-15
+  event_time: "19:30"
+  description: An evening dedicated to the king of Veneto wines. Guided tasting of three vintages of Amarone della Valpolicella, paired with aged cheese and selected cured meats. Limited seats.
+  photo: piatto-pesce.jpeg
+  whatsapp_booking: true
+-
+  title: Dim Sum Night
+  event_date: 2026-05-22
+  event_time: "20:00"
+  description: The best of Chinese tradition in aperitivo format. Steamed dumplings, crispy spring rolls, and wonton soup, all paired with a selection of white wines and sparkling.
+  photo: menu-food.jpeg
+  whatsapp_booking: true
+-
+  title: Summer Aperitivo
+  event_date: 2026-06-05
+  event_time: "18:30"
+  description: We kick off the summer season on our outdoor terrace with spritz, fresh wines, and Wenzhounese finger food. Soft music and a relaxed atmosphere.
+  photo: sala-interna.jpeg
+  whatsapp_booking: true
+-
+  title: Wine & Wonton Night
+  event_date: 2026-04-01
+  event_time: "19:30"
+  description: Our first evening dedicated to the encounter between Italian wine and Chinese cuisine. Four courses, four pairings, one unique experience.
+  photo: Ravioli cinesi.jpeg
+  whatsapp_booking: false

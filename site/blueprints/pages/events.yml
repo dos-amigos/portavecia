@@ -1,0 +1,63 @@
+title: Eventi
+tabs:
+  content:
+    label: Contenuto
+    fields:
+      headline:
+        label: Titolo pagina
+        type: text
+        required: true
+      intro:
+        label: Introduzione
+        type: textarea
+        size: small
+  images:
+    label: Immagini
+    sections:
+      events_images:
+        label: Foto eventi
+        type: files
+        layout: cards
+        image:
+          ratio: 4/3
+          cover: true
+  events:
+    label: Lista Eventi
+    fields:
+      events:
+        label: Eventi
+        type: structure
+        sortable: true
+        fields:
+          title:
+            label: Titolo
+            type: text
+            width: 1/2
+            required: true
+          event_date:
+            label: Data
+            type: date
+            width: 1/4
+            required: true
+          event_time:
+            label: Ora
+            type: time
+            width: 1/4
+          description:
+            label: Descrizione
+            type: textarea
+            size: small
+          photo:
+            label: Foto
+            type: files
+            query: page.images
+            multiple: false
+            width: 1/2
+          whatsapp_booking:
+            label: Prenotazione WhatsApp
+            type: toggle
+            default: true
+            width: 1/2
+            text:
+              - "No"
+              - "Si"

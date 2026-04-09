@@ -12,7 +12,7 @@ Build a bilingual (IT/EN) multi-page website for Porta Vecia enoteca using Kirby
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [x] **Phase 1: Foundation and Global Layout** - Kirby 5 multilingual setup, Vite/Tailwind pipeline, header/footer/nav, language switch, responsive base, cookie consent (completed 2026-04-09)
+- [ ] **Phase 1: Foundation and Global Layout** - Kirby 5 multilingual setup, Vite/Tailwind pipeline, header/footer/nav, language switch, responsive base, cookie consent
 - [ ] **Phase 2: Core Pages** - Homepage, Chi Siamo, Menu, Vini, and Contatti pages with full content models, templates, and bilingual content
 - [ ] **Phase 3: Engagement Features** - Photo gallery with lightbox/categories and events page with management
 - [ ] **Phase 4: SEO and Performance** - Meta tags, structured data, hreflang, image optimization, lazy loading
@@ -31,9 +31,9 @@ Decimal phases appear between their surrounding integers in numeric order.
   5. Content files use Kirby multilingual structure (`.it.txt` / `.en.txt`) from the first commit
 **Plans**: 3 plans
 Plans:
-- [x] 01-01-PLAN.md -- Kirby 5 scaffolding + multilingual IT/EN + Vite/Tailwind/Alpine pipeline
-- [x] 01-02-PLAN.md -- Global layout: header, footer, nav, language switch, responsive Candore styling
-- [x] 01-03-PLAN.md -- Cookie consent system (Garante Privacy 2021 compliant)
+- [ ] 01-01-PLAN.md -- Kirby 5 scaffolding + multilingual IT/EN + Vite/Tailwind/Alpine pipeline
+- [ ] 01-02-PLAN.md -- Global layout: header, footer, nav, language switch, responsive Candore styling
+- [ ] 01-03-PLAN.md -- Cookie consent system (Garante Privacy 2021 compliant)
 **UI hint**: yes
 
 ### Phase 2: Core Pages
@@ -46,13 +46,7 @@ Plans:
   3. Wine page shows a curated selection with bottle photo, name, origin, tasting notes, price, and food pairing suggestions, all editable from Panel
   4. Contact page shows an embedded map, clearly visible opening hours, one-tap WhatsApp and phone buttons, and full address with directions
   5. About page presents the story, philosophy, interior/plateatico photos, and the "Due Tradizioni, Un Tavolo" fusion concept
-**Plans**: 5 plans
-Plans:
-- [x] 02-01-PLAN.md -- Homepage: video hero, fusion teaser, featured previews, L'Esperienza, floating WhatsApp
-- [x] 02-02-PLAN.md -- Menu/Cucina: dish cards by category with photos and wine pairings
-- [x] 02-03-PLAN.md -- Vini: elegant vertical wine list with bottle photos and food pairings
-- [x] 02-04-PLAN.md -- Chi Siamo + Contatti: alternating storytelling blocks and OpenStreetMap contact page
-- [x] 02-05-PLAN.md -- Translation keys integration and visual checkpoint
+**Plans**: TBD
 **UI hint**: yes
 
 ### Phase 3: Engagement Features
@@ -63,10 +57,7 @@ Plans:
   1. Gallery page displays photos in a grid with lightbox viewing, and photos can be filtered by category (locale, piatti, vini, eventi)
   2. Events page lists upcoming special evenings and degustazioni, each with date, description, and image
   3. The bar owner can add, remove, and reorder gallery photos and manage events entirely from Kirby Panel
-**Plans**: 2 plans
-Plans:
-- [x] 03-01-PLAN.md -- Gallery: masonry grid, category filters, GLightbox lightbox, 15 photos from _sources/
-- [ ] 03-02-PLAN.md -- Events: upcoming/past event cards, WhatsApp booking, 4 placeholder events
+**Plans**: TBD
 **UI hint**: yes
 
 ### Phase 4: SEO and Performance
@@ -86,7 +77,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Global Layout | 3/3 | Complete   | 2026-04-09 |
-| 2. Core Pages | 0/5 | Not started | - |
+| 1. Foundation and Global Layout | 0/3 | Not started | - |
+| 2. Core Pages | 0/TBD | Not started | - |
 | 3. Engagement Features | 1/2 | In progress | - |
 | 4. SEO and Performance | 0/TBD | Not started | - |
