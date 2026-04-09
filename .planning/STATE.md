@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-04-08)
 ## Current Position
 
 Phase: 1 of 4 (Foundation and Global Layout)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-04-08 -- Roadmap created
+Plan: 2 of 3 in current phase
+Status: Executing (checkpoint pending on 01-02 Task 3)
+Last activity: 2026-04-09 -- Plan 01-02 Tasks 1-2 complete, awaiting human verification
 
-Progress: [..........] 0%
+Progress: [==........] 20%
 
 ## Performance Metrics
 
@@ -44,6 +44,9 @@ Recent decisions affecting current work:
 
 - Multilingual IT/EN must be enabled from very first commit (Kirby pitfall -- retrofitting causes painful migrations)
 - content/ folder must be in .gitignore from day 1 (content/code deployment collision risk)
+- Site controller (site.php) provides global data to all templates via Kirby controller pattern
+- Language switch uses $page->url($language->code()) for same-page language switching
+- Mobile menu uses Alpine.js x-data/x-show with x-transition
 
 ### Pending Todos
 
@@ -56,6 +59,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-08
-Stopped at: Roadmap created, ready to plan Phase 1
+Last session: 2026-04-09
+Stopped at: Completed 01-02 Tasks 1-2, checkpoint pending Task 3 (human-verify)
 Resume file: None
