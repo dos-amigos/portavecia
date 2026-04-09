@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
-<div id="map" class="h-80 md:h-full min-h-[320px] rounded-lg z-0"></div>
+<div id="map" class="rounded-lg" style="height: 400px; min-height: 320px;"></div>
 
 <!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

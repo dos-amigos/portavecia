@@ -63,7 +63,8 @@
           <?php endif ?>
           <?php if ($whatsapp): ?>
             <a href="https://wa.me/<?= str_replace(['+', ' '], '', $whatsapp) ?>"
-               class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#25D366] text-white font-semibold rounded-md hover:bg-[#20bd5a] transition-colors text-sm uppercase tracking-wider"
+               class="inline-flex items-center justify-center gap-2 px-6 py-3 text-white font-semibold rounded-md transition-colors text-sm uppercase tracking-wider"
+               style="background-color: #25D366;"
                target="_blank" rel="noopener">
               WhatsApp
             </a>
