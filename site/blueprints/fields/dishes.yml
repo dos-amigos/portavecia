@@ -1,0 +1,29 @@
+label: Piatti
+type: structure
+sortable: true
+fields:
+  dish_name:
+    label: Nome piatto
+    type: text
+    width: 1/4
+    required: true
+  description:
+    label: Descrizione
+    type: textarea
+    size: small
+    width: 1/4
+  price:
+    label: Prezzo
+    type: text
+    width: 1/6
+    help: "Es: 8.00"
+  photo:
+    label: Foto
+    type: files
+    query: page.images
+    multiple: false
+    width: 1/6
+  wine_pairing:
+    label: Abbinamento vino
+    type: text
+    width: 1/6
