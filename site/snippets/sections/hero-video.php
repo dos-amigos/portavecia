@@ -32,11 +32,13 @@ $waNumber = $whatsapp ? str_replace(['+', ' '], '', $whatsapp) : '';
 
   <!-- Content -->
   <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
-    <h1 class="font-heading text-5xl md:text-7xl text-light mb-4">
+    <p class="label-text mb-4 reveal" style="opacity:0; transform:translateY(20px)">Enoteca & Cucina Cinese</p>
+    <h1 class="font-heading text-6xl md:text-8xl lg:text-9xl text-light mb-6 reveal" style="opacity:0; transform:translateY(40px)">
       <?= $page->hero_title()->html() ?>
     </h1>
+    <div class="section-divider reveal" style="opacity:0; transform:translateY(20px)"></div>
     <?php if ($page->hero_subtitle()->isNotEmpty()): ?>
-      <p class="text-light/80 text-lg md:text-xl mb-8 font-body">
+      <p class="text-light/70 text-base md:text-lg mb-10 font-body max-w-xl mx-auto reveal" style="opacity:0; transform:translateY(20px)">
         <?= $page->hero_subtitle()->html() ?>
       </p>
     <?php endif ?>
