@@ -63,7 +63,10 @@ Plans:
   1. Gallery page displays photos in a grid with lightbox viewing, and photos can be filtered by category (locale, piatti, vini, eventi)
   2. Events page lists upcoming special evenings and degustazioni, each with date, description, and image
   3. The bar owner can add, remove, and reorder gallery photos and manage events entirely from Kirby Panel
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 03-01-PLAN.md -- Gallery: masonry grid, category filters, GLightbox lightbox, 15 photos from _sources/
+- [ ] 03-02-PLAN.md -- Events: upcoming/past event cards, WhatsApp booking, 4 placeholder events
 **UI hint**: yes
 
 ### Phase 4: SEO and Performance
@@ -85,5 +88,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Foundation and Global Layout | 3/3 | Complete   | 2026-04-09 |
 | 2. Core Pages | 0/5 | Not started | - |
-| 3. Engagement Features | 0/TBD | Not started | - |
+| 3. Engagement Features | 0/2 | Not started | - |
 | 4. SEO and Performance | 0/TBD | Not started | - |
