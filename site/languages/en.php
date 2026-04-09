@@ -41,5 +41,6 @@ return [
         'contact.address' => 'Address',
         'contact.directions' => 'Directions',
         'contact.call' => 'Call',
+        'wines.pairing' => 'Pairs with',
     ],
 ];

@@ -42,5 +42,6 @@ return [
         'contact.address' => 'Indirizzo',
         'contact.directions' => 'Indicazioni',
         'contact.call' => 'Chiama',
+        'wines.pairing' => 'Abbinamento',
     ],
 ];
