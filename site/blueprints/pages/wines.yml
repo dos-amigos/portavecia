@@ -1,0 +1,64 @@
+title: Vini
+tabs:
+  content:
+    label: Contenuto
+    fields:
+      headline:
+        label: Titolo pagina
+        type: text
+        required: true
+      intro:
+        label: Introduzione
+        type: textarea
+        size: small
+  images:
+    label: Immagini
+    sections:
+      wines_images:
+        label: Foto bottiglie
+        type: files
+        layout: cards
+        image:
+          ratio: 2/3
+          cover: true
+  wines:
+    label: Selezione Vini
+    fields:
+      wines:
+        label: Vini
+        type: structure
+        sortable: true
+        fields:
+          name:
+            label: Nome
+            type: text
+            width: 1/3
+            required: true
+          origin:
+            label: Origine
+            type: text
+            width: 1/3
+          grape:
+            label: Vitigno
+            type: text
+            width: 1/3
+          tasting_notes:
+            label: Note di degustazione
+            type: textarea
+            size: small
+            width: 1/2
+          food_pairing:
+            label: Abbinamento cibo
+            type: text
+            width: 1/2
+          price:
+            label: Prezzo
+            type: text
+            width: 1/4
+            help: "Es: 18.00"
+          photo:
+            label: Foto bottiglia
+            type: files
+            query: page.images
+            multiple: false
+            width: 3/4
