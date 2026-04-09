@@ -52,7 +52,7 @@ Plans:
 - [x] 02-02-PLAN.md -- Menu/Cucina: dish cards by category with photos and wine pairings
 - [x] 02-03-PLAN.md -- Vini: elegant vertical wine list with bottle photos and food pairings
 - [x] 02-04-PLAN.md -- Chi Siamo + Contatti: alternating storytelling blocks and OpenStreetMap contact page
-- [ ] 02-05-PLAN.md -- Translation keys integration and visual checkpoint
+- [x] 02-05-PLAN.md -- Translation keys integration and visual checkpoint
 **UI hint**: yes
 
 ### Phase 3: Engagement Features
