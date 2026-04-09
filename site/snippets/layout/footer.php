@@ -68,6 +68,7 @@
   </div>
 </footer>
 
+  <?php snippet('components/whatsapp-float') ?>
   <?php snippet('components/cookie-banner') ?>
   <?= vite()->js('src/js/main.js') ?>
 </body>
