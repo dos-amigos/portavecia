@@ -1,0 +1,41 @@
+Title: Eventi
+
+----
+
+Headline: Eventi
+
+----
+
+Intro: Serate speciali, degustazioni e momenti da condividere
+
+----
+
+Events:
+-
+  title: Degustazione Amarone
+  event_date: 2026-05-15
+  event_time: "19:30"
+  description: Una serata dedicata al re dei vini veneti. Degustazione guidata di tre annate di Amarone della Valpolicella, accompagnata da taglieri di formaggi stagionati e salumi selezionati. Posti limitati.
+  photo: piatto-pesce.jpeg
+  whatsapp_booking: true
+-
+  title: Serata Dim Sum
+  event_date: 2026-05-22
+  event_time: "20:00"
+  description: Il meglio della tradizione cinese in formato aperitivo. Ravioli al vapore, involtini croccanti e wonton in brodo, il tutto accompagnato da una selezione di vini bianchi e bollicine.
+  photo: menu-food.jpeg
+  whatsapp_booking: true
+-
+  title: Aperitivo d'Estate
+  event_date: 2026-06-05
+  event_time: "18:30"
+  description: Inauguriamo la stagione estiva nel nostro plateatico con spritz, vini freschi e finger food della tradizione wenzhounese. Musica soft e atmosfera rilassata.
+  photo: sala-interna.jpeg
+  whatsapp_booking: true
+-
+  title: Wine & Wonton Night
+  event_date: 2026-04-01
+  event_time: "19:30"
+  description: La nostra prima serata dedicata all'incontro tra vino italiano e cucina cinese. Quattro portate, quattro abbinamenti, un'esperienza unica.
+  photo: Ravioli cinesi.jpeg
+  whatsapp_booking: false
