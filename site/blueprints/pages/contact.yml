@@ -1,30 +1,55 @@
 title: Contatti
-fields:
-  headline:
-    label: Titolo pagina
-    type: text
-    required: true
-  intro:
-    label: Introduzione
-    type: textarea
-    size: small
-  map_lat:
-    label: Latitudine
-    type: text
-    width: 1/2
-    help: "Es: 45.2272"
-    translate: false
-  map_lng:
-    label: Longitudine
-    type: text
-    width: 1/2
-    help: "Es: 11.6574"
-    translate: false
-  map_popup:
-    label: Testo popup mappa
-    type: text
-  directions_url:
-    label: URL Indicazioni (Google Maps)
-    type: url
-    translate: false
-    help: "Link a Google Maps con le coordinate del locale"
+tabs:
+  content:
+    label: Contenuto
+    fields:
+      headline:
+        label: Titolo pagina
+        type: text
+        required: true
+      intro:
+        label: Introduzione
+        type: textarea
+        size: small
+      map_lat:
+        label: Latitudine
+        type: text
+        width: 1/2
+        help: "Es: 45.2272"
+        translate: false
+      map_lng:
+        label: Longitudine
+        type: text
+        width: 1/2
+        help: "Es: 11.6574"
+        translate: false
+      map_popup:
+        label: Testo popup mappa
+        type: text
+      directions_url:
+        label: URL Indicazioni (Google Maps)
+        type: url
+        translate: false
+        help: "Link a Google Maps con le coordinate del locale"
+  seo:
+    label: SEO
+    fields:
+      customtitle:
+        label: SEO Title
+        type: text
+        help: "Overrides page title in search results. Max 60 chars."
+        counter: true
+        maxlength: 70
+      description:
+        label: Meta Description
+        type: textarea
+        size: small
+        help: "Shown in search results. Max 160 chars."
+        counter: true
+        maxlength: 170
+      thumbnail:
+        label: Social Share Image
+        type: files
+        query: page.images
+        multiple: false
+        help: "Image for Facebook/Twitter sharing. 1200x630px recommended."

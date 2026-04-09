@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= $page->title() ?> | <?= $site->title() ?></title>
+  <title><?= $page->customtitle()->or($page->title()) ?> | <?= $site->title() ?></title>
+
+  <?= $page->meta()->robots() ?>
+  <?= $page->meta()->social() ?>
+  <?= $page->meta()->jsonld() ?>
+
+  <?php foreach ($kirby->languages() as $lang): ?>
+  <link rel="alternate" hreflang="<?= $lang->code() ?>" href="<?= $page->url($lang->code()) ?>" />
+  <?php endforeach ?>
+  <link rel="alternate" hreflang="x-default" href="<?= $page->url($kirby->defaultLanguage()->code()) ?>" />
+
   <?= vite()->css('src/js/main.js') ?>
 </head>
 <body class="font-body bg-dark text-light pt-20">
