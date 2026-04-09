@@ -1,5 +1,99 @@
 title: Home
-fields:
-  text:
-    label: Text
-    type: textarea
+tabs:
+  hero:
+    label: Hero
+    fields:
+      hero_title:
+        label: Titolo Hero
+        type: text
+        required: true
+      hero_subtitle:
+        label: Sottotitolo Hero
+        type: textarea
+        size: small
+      hero_video:
+        label: Video Background
+        type: files
+        query: page.files.filterBy('extension', 'mp4')
+        multiple: false
+      hero_poster:
+        label: Poster Image (fallback)
+        type: files
+        query: page.images
+        multiple: false
+  teaser:
+    label: Fusion Teaser
+    fields:
+      teaser_title:
+        label: Titolo
+        type: text
+      teaser_text:
+        label: Testo
+        type: textarea
+      teaser_image:
+        label: Immagine
+        type: files
+        query: page.images
+        multiple: false
+  previews:
+    label: Anteprime
+    sections:
+      preview_images:
+        label: Immagini piatti e vini
+        type: files
+        layout: cards
+        image:
+          ratio: 1/1
+          cover: true
+    fields:
+      featured_dishes:
+        label: Piatti in evidenza
+        type: structure
+        max: 3
+        fields:
+          name:
+            label: Nome
+            type: text
+          description:
+            label: Descrizione
+            type: text
+          image:
+            label: Foto
+            type: files
+            query: page.images
+            multiple: false
+      featured_wines:
+        label: Vini in evidenza
+        type: structure
+        max: 3
+        fields:
+          name:
+            label: Nome
+            type: text
+          description:
+            label: Descrizione
+            type: text
+          image:
+            label: Foto
+            type: files
+            query: page.images
+            multiple: false
+  experience:
+    label: L'Esperienza
+    fields:
+      experience_title:
+        label: Titolo
+        type: text
+      experience_text:
+        label: Testo
+        type: textarea
+      experience_image:
+        label: Immagine
+        type: files
+        query: page.images
+        multiple: false
+      experience_image_2:
+        label: Seconda immagine
+        type: files
+        query: page.images
+        multiple: false

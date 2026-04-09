@@ -17,10 +17,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Homepage
 
-- [ ] **HOME-01**: Hero section con immagine forte del locale/piatti e CTA prenotazione WhatsApp
-- [ ] **HOME-02**: Sezione teaser "fusion concept" — anteprima dell'incontro vino+cucina cinese
-- [ ] **HOME-03**: Anteprima vini e piatti in evidenza con link alle rispettive pagine
-- [ ] **HOME-04**: Sezione "L'Esperienza" — storytelling visivo dell'esperienza al locale
+- [x] **HOME-01**: Hero section con immagine forte del locale/piatti e CTA prenotazione WhatsApp
+- [x] **HOME-02**: Sezione teaser "fusion concept" — anteprima dell'incontro vino+cucina cinese
+- [x] **HOME-03**: Anteprima vini e piatti in evidenza con link alle rispettive pagine
+- [x] **HOME-04**: Sezione "L'Esperienza" — storytelling visivo dell'esperienza al locale
 
 ### Chi Siamo
 
@@ -67,7 +67,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Bilingue
 
-- [ ] **LANG-01**: Tutti i contenuti disponibili in italiano e inglese
+- [x] **LANG-01**: Tutti i contenuti disponibili in italiano e inglese
 - [ ] **LANG-02**: Language switch visibile in header
 - [ ] **LANG-03**: Stringhe UI tradotte tramite sistema t() di Kirby
 
@@ -112,10 +112,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-05 | Phase 1 | Complete |
 | LANG-02 | Phase 1 | Pending |
 | LANG-03 | Phase 1 | Pending |
-| HOME-01 | Phase 2 | Pending |
-| HOME-02 | Phase 2 | Pending |
-| HOME-03 | Phase 2 | Pending |
-| HOME-04 | Phase 2 | Pending |
+| HOME-01 | Phase 2 | Complete |
+| HOME-02 | Phase 2 | Complete |
+| HOME-03 | Phase 2 | Complete |
+| HOME-04 | Phase 2 | Complete |
 | ABOUT-01 | Phase 2 | Pending |
 | ABOUT-02 | Phase 2 | Pending |
 | MENU-01 | Phase 2 | Pending |
@@ -128,7 +128,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |
 | CONT-04 | Phase 2 | Pending |
-| LANG-01 | Phase 2 | Pending |
+| LANG-01 | Phase 2 | Complete |
 | GALL-01 | Phase 3 | Pending |
 | GALL-02 | Phase 3 | Pending |
 | GALL-03 | Phase 3 | Pending |

@@ -48,7 +48,7 @@ Plans:
   5. About page presents the story, philosophy, interior/plateatico photos, and the "Due Tradizioni, Un Tavolo" fusion concept
 **Plans**: 5 plans
 Plans:
-- [ ] 02-01-PLAN.md -- Homepage: video hero, fusion teaser, featured previews, L'Esperienza, floating WhatsApp
+- [x] 02-01-PLAN.md -- Homepage: video hero, fusion teaser, featured previews, L'Esperienza, floating WhatsApp
 - [ ] 02-02-PLAN.md -- Menu/Cucina: dish cards by category with photos and wine pairings
 - [ ] 02-03-PLAN.md -- Vini: elegant vertical wine list with bottle photos and food pairings
 - [ ] 02-04-PLAN.md -- Chi Siamo + Contatti: alternating storytelling blocks and OpenStreetMap contact page
@@ -84,6 +84,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation and Global Layout | 3/3 | Complete   | 2026-04-09 |
-| 2. Core Pages | 0/5 | Not started | - |
+| 2. Core Pages | 1/5 | In Progress|  |
 | 3. Engagement Features | 0/TBD | Not started | - |
 | 4. SEO and Performance | 0/TBD | Not started | - |

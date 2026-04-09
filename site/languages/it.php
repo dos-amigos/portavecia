@@ -28,5 +28,11 @@ return [
         'cookie.always_active' => 'Sempre attivi',
         'cookie.back' => 'Indietro',
         'cookie.policy_link' => 'Cookie Policy',
+        'home.whatsapp_cta' => 'Prenota su WhatsApp',
+        'home.featured' => 'I Nostri Protagonisti',
+        'home.featured_dishes' => 'Dalla Cucina',
+        'home.featured_wines' => 'Dalla Cantina',
+        'home.discover_menu' => 'Scopri il Menu',
+        'home.discover_wines' => 'Scopri i Vini',
     ],
 ];
