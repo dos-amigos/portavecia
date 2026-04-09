@@ -1,0 +1,79 @@
+title: Chi Siamo
+tabs:
+  content:
+    label: Contenuto
+    fields:
+      headline:
+        label: Titolo pagina
+        type: text
+        required: true
+      intro:
+        label: Introduzione
+        type: textarea
+        size: small
+  story:
+    label: La Storia
+    fields:
+      story_title:
+        label: Titolo
+        type: text
+      story_text:
+        label: Testo
+        type: textarea
+      story_image:
+        label: Immagine
+        type: files
+        query: page.images
+        multiple: false
+  place:
+    label: Il Locale
+    fields:
+      place_title:
+        label: Titolo
+        type: text
+      place_text:
+        label: Testo
+        type: textarea
+      place_image:
+        label: Immagine
+        type: files
+        query: page.images
+        multiple: false
+  fusion:
+    label: Due Tradizioni
+    fields:
+      fusion_title:
+        label: Titolo
+        type: text
+      fusion_text:
+        label: Testo
+        type: textarea
+      fusion_image:
+        label: Immagine
+        type: files
+        query: page.images
+        multiple: false
+  atmosphere:
+    label: L'Atmosfera
+    fields:
+      atmosphere_title:
+        label: Titolo
+        type: text
+      atmosphere_text:
+        label: Testo
+        type: textarea
+      atmosphere_image:
+        label: Immagine
+        type: files
+        query: page.images
+        multiple: false
+  images:
+    label: Immagini
+    sections:
+      about_images:
+        label: Foto
+        type: files
+        layout: cards
+        image:
+          ratio: 3/2
+          cover: true
