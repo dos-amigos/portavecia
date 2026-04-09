@@ -68,7 +68,10 @@ Plans:
   1. Every page has a unique meta title and description (editable from Panel) and correct hreflang tags pointing to its Italian/English counterpart
   2. JSON-LD structured data (LocalBusiness/Restaurant with servesCuisine for both Italian wine and Chinese food) is present on key pages and validates in Google Rich Results Test
   3. Images use srcset with multiple sizes, WebP format where supported, and lazy loading -- gallery and menu pages load under 3 seconds on a 4G connection
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 04-01-PLAN.md -- SEO meta infrastructure: config, blueprints, header meta/hreflang, JSON-LD models, sitemap/robots
+- [ ] 04-02-PLAN.md -- Image performance: responsive-image snippet, srcset/WebP, lazy loading across all templates
 
 ## Progress
 
@@ -80,4 +83,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Foundation and Global Layout | 0/3 | Not started | - |
 | 2. Core Pages | 0/TBD | Not started | - |
 | 3. Engagement Features | 1/2 | In progress | - |
-| 4. SEO and Performance | 0/TBD | Not started | - |
+| 4. SEO and Performance | 0/2 | Not started | - |
