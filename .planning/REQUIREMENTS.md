@@ -35,9 +35,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Vini
 
-- [ ] **WINE-01**: Vetrina selezione vini con foto bottiglia, nome, origine, note degustazione, prezzo (stile Candore wine)
-- [ ] **WINE-02**: Suggerimenti abbinamento cibo per ciascun vino
-- [ ] **WINE-03**: Tutto editabile da Kirby Panel
+- [x] **WINE-01**: Vetrina selezione vini con foto bottiglia, nome, origine, note degustazione, prezzo (stile Candore wine)
+- [x] **WINE-02**: Suggerimenti abbinamento cibo per ciascun vino
+- [x] **WINE-03**: Tutto editabile da Kirby Panel
 
 ### Gallery
 
@@ -121,9 +121,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MENU-01 | Phase 2 | Pending |
 | MENU-02 | Phase 2 | Pending |
 | MENU-03 | Phase 2 | Pending |
-| WINE-01 | Phase 2 | Pending |
-| WINE-02 | Phase 2 | Pending |
-| WINE-03 | Phase 2 | Pending |
+| WINE-01 | Phase 2 | Complete |
+| WINE-02 | Phase 2 | Complete |
+| WINE-03 | Phase 2 | Complete |
 | CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Complete |
 | CONT-03 | Phase 2 | Complete |

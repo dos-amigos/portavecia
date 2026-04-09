@@ -48,9 +48,9 @@ Plans:
   5. About page presents the story, philosophy, interior/plateatico photos, and the "Due Tradizioni, Un Tavolo" fusion concept
 **Plans**: 5 plans
 Plans:
-- [ ] 02-01-PLAN.md -- Homepage: video hero, fusion teaser, featured previews, L'Esperienza, floating WhatsApp
+- [x] 02-01-PLAN.md -- Homepage: video hero, fusion teaser, featured previews, L'Esperienza, floating WhatsApp
 - [x] 02-02-PLAN.md -- Menu/Cucina: dish cards by category with photos and wine pairings
-- [ ] 02-03-PLAN.md -- Vini: elegant vertical wine list with bottle photos and food pairings
+- [x] 02-03-PLAN.md -- Vini: elegant vertical wine list with bottle photos and food pairings
 - [x] 02-04-PLAN.md -- Chi Siamo + Contatti: alternating storytelling blocks and OpenStreetMap contact page
 - [ ] 02-05-PLAN.md -- Translation keys integration and visual checkpoint
 **UI hint**: yes
