@@ -1,0 +1,52 @@
+title: Menu
+tabs:
+  content:
+    label: Contenuto
+    fields:
+      headline:
+        label: Titolo pagina
+        type: text
+      intro:
+        label: Introduzione
+        type: textarea
+        size: small
+  images:
+    label: Immagini
+    sections:
+      menu_images:
+        label: Foto piatti
+        type: files
+        layout: cards
+        image:
+          ratio: 1/1
+          cover: true
+  antipasti:
+    label: Antipasti
+    fields:
+      antipasti:
+        extends: fields/dishes
+        label: Antipasti
+  primi:
+    label: Primi
+    fields:
+      primi:
+        extends: fields/dishes
+        label: Primi Piatti
+  secondi:
+    label: Secondi
+    fields:
+      secondi:
+        extends: fields/dishes
+        label: Secondi Piatti
+  zuppe:
+    label: Zuppe
+    fields:
+      zuppe:
+        extends: fields/dishes
+        label: Zuppe
+  dolci:
+    label: Dolci
+    fields:
+      dolci:
+        extends: fields/dishes
+        label: Dolci

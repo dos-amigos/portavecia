@@ -33,5 +33,10 @@ return [
         'home.featured_wines' => 'From the Cellar',
         'home.discover_menu' => 'Discover the Menu',
         'home.discover_wines' => 'Discover the Wines',
+        'menu.antipasti' => 'Starters',
+        'menu.primi' => 'First Courses',
+        'menu.secondi' => 'Main Courses',
+        'menu.zuppe' => 'Soups',
+        'menu.dolci' => 'Desserts',
     ],
 ];

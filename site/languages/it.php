@@ -34,5 +34,10 @@ return [
         'home.featured_wines' => 'Dalla Cantina',
         'home.discover_menu' => 'Scopri il Menu',
         'home.discover_wines' => 'Scopri i Vini',
+        'menu.antipasti' => 'Antipasti',
+        'menu.primi' => 'Primi Piatti',
+        'menu.secondi' => 'Secondi Piatti',
+        'menu.zuppe' => 'Zuppe',
+        'menu.dolci' => 'Dolci',
     ],
 ];
