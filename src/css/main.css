@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/raleway/400.css";
+@import "@fontsource/raleway/600.css";
+@import "@fontsource/raleway/700.css";
+
+@theme {
+  --color-primary: oklch(0.72 0.1 75);
+  --color-primary-dark: oklch(0.62 0.1 75);
+  --color-dark: oklch(0.15 0 0);
+  --color-light: oklch(0.96 0.01 80);
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Raleway', sans-serif;
+}
