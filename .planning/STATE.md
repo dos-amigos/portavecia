@@ -64,19 +64,13 @@ Recent decisions affecting current work:
 - Multilingual IT/EN must be enabled from very first commit (Kirby pitfall -- retrofitting causes painful migrations)
 - content/ folder must be in .gitignore from day 1 (content/code deployment collision risk)
 
-<<<<<<< HEAD
 
 - kirby-helpers vite config uses entry/outDir format (v6.7.1)
 - Tailwind CSS 4: CSS-first @theme directive, no tailwind.config.js
 - Fonts self-hosted via @fontsource for GDPR compliance
-
-=======
-
 - Site controller (site.php) provides global data to all templates via Kirby controller pattern
 - Language switch uses $page->url($language->code()) for same-page language switching
 - Mobile menu uses Alpine.js x-data/x-show with x-transition
-
->>>>>>> worktree-agent-a7dfa852
 
 - [Phase 01]: Adapted tecnostudio cookie consent for Porta Vecia: bilingual t() strings, bg-dark/text-light tokens, reopenBanner() via custom event dispatch
 
@@ -93,8 +87,5 @@ None yet.
 
 Last session: 2026-04-09T08:28:00.324Z
 <<<<<<< HEAD
-Stopped at: Completed 01-03-PLAN.md (Task 2 checkpoint:human-verify pending)
-=======
-Stopped at: Completed 01-02 Tasks 1-2, checkpoint pending Task 3 (human-verify)
->>>>>>> worktree-agent-a7dfa852
+Stopped at: All 3 plans complete, cookie consent checkpoint pending human verification
 Resume file: None
