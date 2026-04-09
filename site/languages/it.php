@@ -28,5 +28,10 @@ return [
         'cookie.always_active' => 'Sempre attivi',
         'cookie.back' => 'Indietro',
         'cookie.policy_link' => 'Cookie Policy',
+        'menu.antipasti' => 'Antipasti',
+        'menu.primi' => 'Primi Piatti',
+        'menu.secondi' => 'Secondi Piatti',
+        'menu.zuppe' => 'Zuppe',
+        'menu.dolci' => 'Dolci',
     ],
 ];

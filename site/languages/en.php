@@ -27,5 +27,10 @@ return [
         'cookie.always_active' => 'Always active',
         'cookie.back' => 'Back',
         'cookie.policy_link' => 'Cookie Policy',
+        'menu.antipasti' => 'Starters',
+        'menu.primi' => 'First Courses',
+        'menu.secondi' => 'Main Courses',
+        'menu.zuppe' => 'Soups',
+        'menu.dolci' => 'Desserts',
     ],
 ];
