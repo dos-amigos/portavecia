@@ -21,9 +21,25 @@
 <header x-data="{ mobileOpen: false }" class="fixed top-0 w-full z-50 bg-dark border-b border-light/10">
   <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-20">
 
-    <!-- Logo -->
-    <a href="<?= $site->url() ?>" class="font-heading text-2xl text-primary hover:text-primary-dark transition-colors">
-      Porta Vecia
+    <!-- Logo: tower + text -->
+    <a href="<?= $site->url() ?>" class="hover:opacity-80 transition-opacity flex items-center gap-2 shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 48" fill="none" class="h-8 w-auto">
+        <g stroke="var(--color-primary)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <rect x="8" y="20" width="20" height="24" rx="1"/>
+          <rect x="10" y="12" width="16" height="10" rx="1"/>
+          <rect x="12" y="5" width="12" height="9" rx="1"/>
+          <line x1="18" y1="0" x2="18" y2="5"/>
+          <circle cx="18" cy="16" r="3"/>
+          <line x1="18" y1="14" x2="18" y2="16"/>
+          <line x1="18" y1="16" x2="19.5" y2="17"/>
+          <path d="M15 44 L15 38 A3 3 0 0 1 21 38 L21 44"/>
+          <rect x="13" y="23" width="3" height="4" rx="0.5"/>
+          <rect x="20" y="23" width="3" height="4" rx="0.5"/>
+          <line x1="12" y1="5" x2="12" y2="3"/><line x1="15" y1="5" x2="15" y2="3"/>
+          <line x1="21" y1="5" x2="21" y2="3"/><line x1="24" y1="5" x2="24" y2="3"/>
+        </g>
+      </svg>
+      <span class="font-heading text-3xl whitespace-nowrap" style="-webkit-text-stroke: 1px var(--color-light); color: transparent">Porta Vecia</span>
     </a>
 
     <!-- Desktop nav -->
@@ -60,31 +76,67 @@
     </button>
   </div>
 
-  <!-- Mobile nav panel -->
+  <!-- Mobile nav fullscreen overlay -->
   <nav
     x-show="mobileOpen"
-    x-transition:enter="transition ease-out duration-200"
-    x-transition:enter-start="opacity-0 -translate-y-2"
-    x-transition:enter-end="opacity-100 translate-y-0"
-    x-transition:leave="transition ease-in duration-150"
-    x-transition:leave-start="opacity-100 translate-y-0"
-    x-transition:leave-end="opacity-0 -translate-y-2"
+    x-transition:enter="transition ease-out duration-500"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-300"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    @keydown.escape.window="mobileOpen = false"
     x-cloak
-    class="md:hidden bg-dark border-t border-light/10"
+    class="md:hidden fixed inset-0 z-40 flex flex-col items-center justify-center"
+    style="background: rgba(10, 10, 14, 0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
     aria-label="Mobile"
   >
-    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col gap-4">
-      <a @click="mobileOpen = false" href="<?= $site->find('home') ? $site->find('home')->url() : $site->url() ?>" class="text-light/80 hover:text-primary text-base uppercase tracking-wider font-body transition-colors"><?= t('nav.home') ?></a>
-      <a @click="mobileOpen = false" href="<?= ($p = $site->find('about')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-base uppercase tracking-wider font-body transition-colors"><?= t('nav.about') ?></a>
-      <a @click="mobileOpen = false" href="<?= ($p = $site->find('menu')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-base uppercase tracking-wider font-body transition-colors"><?= t('nav.menu') ?></a>
-      <a @click="mobileOpen = false" href="<?= ($p = $site->find('wines')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-base uppercase tracking-wider font-body transition-colors"><?= t('nav.wines') ?></a>
-      <a @click="mobileOpen = false" href="<?= ($p = $site->find('gallery')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-base uppercase tracking-wider font-body transition-colors"><?= t('nav.gallery') ?></a>
-      <a @click="mobileOpen = false" href="<?= ($p = $site->find('events')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-base uppercase tracking-wider font-body transition-colors"><?= t('nav.events') ?></a>
-      <a @click="mobileOpen = false" href="<?= ($p = $site->find('contact')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-base uppercase tracking-wider font-body transition-colors"><?= t('nav.contact') ?></a>
+    <!-- Close button -->
+    <button
+      @click="mobileOpen = false"
+      class="absolute top-6 right-5 text-light/70 hover:text-primary transition-colors p-2"
+      aria-label="Close menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
 
-      <div class="pt-4 border-t border-light/10">
-        <?php snippet('components/language-switch') ?>
-      </div>
+    <!-- Nav links -->
+    <div class="flex flex-col items-center gap-7">
+      <a @click="mobileOpen = false" href="<?= $site->find('home') ? $site->find('home')->url() : $site->url() ?>"
+         class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
+         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-100" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+      ><?= t('nav.home') ?></a>
+      <a @click="mobileOpen = false" href="<?= ($p = $site->find('about')) ? $p->url() : '#' ?>"
+         class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
+         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-150" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+      ><?= t('nav.about') ?></a>
+      <a @click="mobileOpen = false" href="<?= ($p = $site->find('menu')) ? $p->url() : '#' ?>"
+         class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
+         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-200" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+      ><?= t('nav.menu') ?></a>
+      <a @click="mobileOpen = false" href="<?= ($p = $site->find('wines')) ? $p->url() : '#' ?>"
+         class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
+         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-[250ms]" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+      ><?= t('nav.wines') ?></a>
+      <a @click="mobileOpen = false" href="<?= ($p = $site->find('gallery')) ? $p->url() : '#' ?>"
+         class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
+         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-300" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+      ><?= t('nav.gallery') ?></a>
+      <a @click="mobileOpen = false" href="<?= ($p = $site->find('events')) ? $p->url() : '#' ?>"
+         class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
+         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-[350ms]" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+      ><?= t('nav.events') ?></a>
+      <a @click="mobileOpen = false" href="<?= ($p = $site->find('contact')) ? $p->url() : '#' ?>"
+         class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
+         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-[400ms]" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+      ><?= t('nav.contact') ?></a>
+    </div>
+
+    <!-- Language switch -->
+    <div class="mt-10" x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+      <?php snippet('components/language-switch') ?>
     </div>
   </nav>
 </header>
