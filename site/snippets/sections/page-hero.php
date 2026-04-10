@@ -1,28 +1,40 @@
 <?php
 /**
- * Page hero with background image, title, and intro
+ * Page hero with background image/video, title, and intro
  * Usage: snippet('sections/page-hero', ['page' => $page, 'image' => 'hero-image.jpg'])
  */
 $heroImage = null;
+$heroVideo = null;
 if (isset($image)) {
     $heroImage = $page->file($image);
 }
-// Fallback: look for any file with "hero" in the name
-if (!$heroImage) {
-    foreach ($page->files() as $file) {
-        if (str_contains(strtolower($file->filename()), 'hero')) {
+// Look for hero video and hero image by filename
+foreach ($page->files() as $file) {
+    if (str_contains(strtolower($file->filename()), 'hero')) {
+        if ($file->type() === 'video' && !$heroVideo) {
+            $heroVideo = $file;
+        } elseif ($file->type() === 'image' && !$heroImage) {
             $heroImage = $file;
-            break;
         }
     }
 }
 ?>
 <section class="relative flex items-center justify-center overflow-hidden" style="min-height: 50vh;">
-  <?php if ($heroImage): ?>
-    <img src="<?= $heroImage->url() ?>"
-         alt="<?= $page->headline()->or($page->title())->value() ?>"
-         class="absolute inset-0 w-full h-full object-cover"
-         loading="eager">
+  <?php if ($heroVideo): ?>
+    <video
+      autoplay muted loop playsinline
+      class="absolute inset-0 w-full h-full object-cover"
+      <?php if ($heroImage): ?>poster="<?= $heroImage->url() ?>"<?php endif ?>
+    >
+      <source src="<?= $heroVideo->url() ?>" type="video/mp4">
+    </video>
+  <?php elseif ($heroImage): ?>
+    <div class="parallax-hero absolute inset-0 w-full h-[120%] -top-[10%]">
+      <img src="<?= $heroImage->url() ?>"
+           alt="<?= $page->headline()->or($page->title())->value() ?>"
+           class="w-full h-full object-cover"
+           loading="eager">
+    </div>
   <?php endif ?>
 
   <!-- Gradient overlay -->
