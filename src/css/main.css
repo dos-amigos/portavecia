@@ -131,7 +131,7 @@
 /* WhatsApp floating button — elegant circle */
 .wa-float {
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 5rem;
   right: 1.5rem;
   z-index: 9999;
   width: 52px;

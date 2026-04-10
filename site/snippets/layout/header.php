@@ -87,7 +87,7 @@
     @keydown.escape.window="mobileOpen = false"
     x-cloak
     class="md:hidden fixed inset-0 z-40 flex flex-col items-center justify-center"
-    style="background: rgba(10, 10, 14, 0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
+    style="background: #0a0a0e; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
     aria-label="Mobile"
   >
     <!-- Logo in white at top -->
