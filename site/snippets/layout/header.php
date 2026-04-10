@@ -48,7 +48,6 @@
       <a href="<?= ($p = $site->find('about')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.about') ?></a>
       <a href="<?= ($p = $site->find('menu')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.menu') ?></a>
       <a href="<?= ($p = $site->find('wines')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.wines') ?></a>
-      <a href="<?= ($p = $site->find('gallery')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.gallery') ?></a>
       <a href="<?= ($p = $site->find('events')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.events') ?></a>
       <a href="<?= ($p = $site->find('contact')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.contact') ?></a>
     </nav>
@@ -141,17 +140,13 @@
          class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
          x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-[250ms]" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
       ><?= t('nav.wines') ?></a>
-      <a @click="mobileOpen = false" href="<?= ($p = $site->find('gallery')) ? $p->url() : '#' ?>"
-         class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
-         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-300" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
-      ><?= t('nav.gallery') ?></a>
       <a @click="mobileOpen = false" href="<?= ($p = $site->find('events')) ? $p->url() : '#' ?>"
          class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
-         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-[350ms]" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-300" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
       ><?= t('nav.events') ?></a>
       <a @click="mobileOpen = false" href="<?= ($p = $site->find('contact')) ? $p->url() : '#' ?>"
          class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
-         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-[400ms]" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+         x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-[350ms]" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
       ><?= t('nav.contact') ?></a>
     </div>
 
