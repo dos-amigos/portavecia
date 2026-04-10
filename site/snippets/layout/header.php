@@ -91,13 +91,34 @@
     style="background: rgba(10, 10, 14, 0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
     aria-label="Mobile"
   >
+    <!-- Logo in white at top -->
+    <div class="absolute top-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 48" fill="none" class="h-8 w-auto">
+        <g stroke="var(--color-primary)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <rect x="8" y="20" width="20" height="24" rx="1"/>
+          <rect x="10" y="12" width="16" height="10" rx="1"/>
+          <rect x="12" y="5" width="12" height="9" rx="1"/>
+          <line x1="18" y1="0" x2="18" y2="5"/>
+          <circle cx="18" cy="16" r="3"/>
+          <line x1="18" y1="14" x2="18" y2="16"/>
+          <line x1="18" y1="16" x2="19.5" y2="17"/>
+          <path d="M15 44 L15 38 A3 3 0 0 1 21 38 L21 44"/>
+          <rect x="13" y="23" width="3" height="4" rx="0.5"/>
+          <rect x="20" y="23" width="3" height="4" rx="0.5"/>
+          <line x1="12" y1="5" x2="12" y2="3"/><line x1="15" y1="5" x2="15" y2="3"/>
+          <line x1="21" y1="5" x2="21" y2="3"/><line x1="24" y1="5" x2="24" y2="3"/>
+        </g>
+      </svg>
+      <span class="font-heading text-3xl text-light">Porta Vecia</span>
+    </div>
+
     <!-- Close button -->
     <button
       @click="mobileOpen = false"
-      class="absolute top-6 right-5 text-light/70 hover:text-primary transition-colors p-2"
+      class="absolute top-6 right-5 text-light hover:text-primary transition-colors p-2 z-50"
       aria-label="Close menu"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </button>
