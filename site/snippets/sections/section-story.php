@@ -4,7 +4,7 @@ $experienceImage2 = $page->experience_image_2()->toFile();
 ?>
 <section class="pt-32 md:pt-44 pb-16 md:pb-20 px-6 md:px-8">
   <div class="container-site">
-    <div class="flex flex-col md:flex-row gap-16 items-start">
+    <div class="flex flex-col md:flex-row gap-16 items-center">
       <!-- Text (left) -->
       <div class="md:w-[40%] shrink-0 reveal-left" style="opacity:0; transform:translateX(-60px)">
         <?php if ($page->experience_title()->isNotEmpty()): ?>
