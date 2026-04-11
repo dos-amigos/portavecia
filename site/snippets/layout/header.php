@@ -2,7 +2,7 @@
 <html lang="<?= $kirby->language()->code() ?>">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title><?= $page->customtitle()->or($page->title()) ?> | <?= $site->title() ?></title>
 
   <?= $page->meta()->robots() ?>
@@ -23,23 +23,16 @@
 
     <!-- Logo: tower + text -->
     <a href="<?= $site->url() ?>" class="hover:opacity-80 transition-opacity flex items-center gap-2 shrink-0">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 48" fill="none" class="h-8 w-auto">
-        <g stroke="var(--color-primary)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-          <rect x="8" y="20" width="20" height="24" rx="1"/>
-          <rect x="10" y="12" width="16" height="10" rx="1"/>
-          <rect x="12" y="5" width="12" height="9" rx="1"/>
-          <line x1="18" y1="0" x2="18" y2="5"/>
-          <circle cx="18" cy="16" r="3"/>
-          <line x1="18" y1="14" x2="18" y2="16"/>
-          <line x1="18" y1="16" x2="19.5" y2="17"/>
-          <path d="M15 44 L15 38 A3 3 0 0 1 21 38 L21 44"/>
-          <rect x="13" y="23" width="3" height="4" rx="0.5"/>
-          <rect x="20" y="23" width="3" height="4" rx="0.5"/>
-          <line x1="12" y1="5" x2="12" y2="3"/><line x1="15" y1="5" x2="15" y2="3"/>
-          <line x1="21" y1="5" x2="21" y2="3"/><line x1="24" y1="5" x2="24" y2="3"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 48" fill="none" class="h-8 w-auto">
+        <g stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M8 4 C8 4 6 18 16 18 C26 18 24 4 24 4"/>
+          <line x1="8" y1="4" x2="24" y2="4"/>
+          <line x1="16" y1="18" x2="16" y2="34"/>
+          <line x1="10" y1="34" x2="22" y2="34"/>
+          <path d="M24 4 C24.5 10 26 12 28 13" opacity="0.5"/>
         </g>
       </svg>
-      <span class="font-heading text-3xl whitespace-nowrap" style="-webkit-text-stroke: 1px var(--color-light); color: transparent">Porta Vecia</span>
+      <span class="font-heading text-3xl whitespace-nowrap text-light">Porta Vecia</span>
     </a>
 
     <!-- Desktop nav -->
@@ -86,26 +79,19 @@
     x-transition:leave-end="opacity-0"
     @keydown.escape.window="mobileOpen = false"
     x-cloak
-    class="md:hidden fixed inset-0 z-40 flex flex-col items-center justify-center"
+    class="md:hidden fixed inset-0 z-[60] flex flex-col items-center justify-center"
     style="background: #0a0a0e; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
     aria-label="Mobile"
   >
     <!-- Logo in white at top -->
     <div class="absolute top-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 48" fill="none" class="h-8 w-auto">
-        <g stroke="var(--color-primary)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-          <rect x="8" y="20" width="20" height="24" rx="1"/>
-          <rect x="10" y="12" width="16" height="10" rx="1"/>
-          <rect x="12" y="5" width="12" height="9" rx="1"/>
-          <line x1="18" y1="0" x2="18" y2="5"/>
-          <circle cx="18" cy="16" r="3"/>
-          <line x1="18" y1="14" x2="18" y2="16"/>
-          <line x1="18" y1="16" x2="19.5" y2="17"/>
-          <path d="M15 44 L15 38 A3 3 0 0 1 21 38 L21 44"/>
-          <rect x="13" y="23" width="3" height="4" rx="0.5"/>
-          <rect x="20" y="23" width="3" height="4" rx="0.5"/>
-          <line x1="12" y1="5" x2="12" y2="3"/><line x1="15" y1="5" x2="15" y2="3"/>
-          <line x1="21" y1="5" x2="21" y2="3"/><line x1="24" y1="5" x2="24" y2="3"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 48" fill="none" class="h-8 w-auto">
+        <g stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M8 4 C8 4 6 18 16 18 C26 18 24 4 24 4"/>
+          <line x1="8" y1="4" x2="24" y2="4"/>
+          <line x1="16" y1="18" x2="16" y2="34"/>
+          <line x1="10" y1="34" x2="22" y2="34"/>
+          <path d="M24 4 C24.5 10 26 12 28 13" opacity="0.5"/>
         </g>
       </svg>
       <span class="font-heading text-3xl text-light">Porta Vecia</span>
