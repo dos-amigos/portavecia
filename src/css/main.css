@@ -6,6 +6,7 @@
 @import "@fontsource/dm-sans/500.css";
 @import "@fontsource/dm-sans/700.css";
 @import "@fontsource/pinyon-script/400.css";
+@import "@fontsource/playfair-display/400.css";
 
 @theme {
   --color-primary: oklch(0.72 0.1 75);
@@ -16,6 +17,7 @@
   --font-heading: 'DM Serif Display', serif;
   --font-body: 'DM Sans', sans-serif;
   --font-script: 'Pinyon Script', cursive;
+  --font-logo: 'Playfair Display', serif;
 }
 
 @layer base {
@@ -133,7 +135,7 @@
 /* WhatsApp floating button — elegant circle */
 .wa-float {
   position: fixed;
-  bottom: 5rem;
+  bottom: 1.5rem;
   right: 1.5rem;
   z-index: 9999;
   width: 52px;

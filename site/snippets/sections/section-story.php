@@ -34,7 +34,7 @@ $experienceImage2 = $page->experience_image_2()->toFile();
           </div>
         <?php endif ?>
         <?php if ($experienceImage2): ?>
-          <div class="parallax-photo-2 rounded-lg overflow-hidden" style="width:45%; height:350px; margin-top:20px; margin-left:5%; position:relative; z-index:10; box-shadow: 0 25px 50px rgba(0,0,0,0.6), 0 10px 20px rgba(0,0,0,0.4)">
+          <div class="parallax-photo-2 rounded-lg overflow-hidden w-full md:w-[45%] md:ml-[5%] mt-5 relative" style="height:300px; z-index:10; box-shadow: 0 25px 50px rgba(0,0,0,0.6), 0 10px 20px rgba(0,0,0,0.4)">
             <?php snippet('components/responsive-image', [
                 'image' => $experienceImage2,
                 'preset' => 'default',

@@ -26,17 +26,17 @@
         <?= t('cookie.message') ?>
         <a href="<?= ($cp = $site->find('cookie-policy')) ? $cp->url() : '#' ?>" class="text-primary underline hover:text-primary-dark transition-colors"><?= t('cookie.policy_link') ?></a>
       </p>
-      <div class="flex flex-nowrap gap-2 sm:gap-3 shrink-0 w-full md:w-auto">
+      <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 shrink-0 w-full md:w-auto">
         <button @click="rejectAll()"
-                class="flex-1 md:flex-none px-3 sm:px-5 py-2.5 text-xs sm:text-sm font-semibold border border-light/20 text-light/80 rounded-md hover:bg-light/10 transition-colors whitespace-nowrap">
+                class="w-full sm:w-auto px-5 py-2.5 text-sm font-semibold border border-light/20 text-light/80 rounded-md hover:bg-light/10 transition-colors">
           <?= t('cookie.reject') ?>
         </button>
         <button @click="showCustomize = true"
-                class="flex-1 md:flex-none px-3 sm:px-5 py-2.5 text-xs sm:text-sm font-semibold border border-light/20 text-light/80 rounded-md hover:bg-light/10 transition-colors whitespace-nowrap">
+                class="w-full sm:w-auto px-5 py-2.5 text-sm font-semibold border border-light/20 text-light/80 rounded-md hover:bg-light/10 transition-colors">
           <?= t('cookie.customize') ?>
         </button>
         <button @click="acceptAll()"
-                class="flex-1 md:flex-none px-3 sm:px-5 py-2.5 text-xs sm:text-sm font-semibold bg-primary text-white rounded-md hover:bg-primary-dark transition-colors whitespace-nowrap">
+                class="w-full sm:w-auto px-5 py-2.5 text-sm font-semibold bg-primary text-white rounded-md hover:bg-primary-dark transition-colors">
           <?= t('cookie.accept') ?>
         </button>
       </div>

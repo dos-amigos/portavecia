@@ -87,13 +87,45 @@
     "file": "assets/pinyon-script-vietnamese-400-normal-D9IEVGR9.woff2",
     "src": "node_modules/@fontsource/pinyon-script/files/pinyon-script-vietnamese-400-normal.woff2"
   },
+  "node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff": {
+    "file": "assets/playfair-display-cyrillic-400-normal-ZiRag6zj.woff",
+    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff"
+  },
+  "node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff2": {
+    "file": "assets/playfair-display-cyrillic-400-normal-CjW2EstV.woff2",
+    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff": {
+    "file": "assets/playfair-display-latin-400-normal-DHYHbkg3.woff",
+    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff2": {
+    "file": "assets/playfair-display-latin-400-normal-CFtfchNt.woff2",
+    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff": {
+    "file": "assets/playfair-display-latin-ext-400-normal-qdZwdvNS.woff",
+    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff2": {
+    "file": "assets/playfair-display-latin-ext-400-normal-BxlSGspa.woff2",
+    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff": {
+    "file": "assets/playfair-display-vietnamese-400-normal-BbvUAu4N.woff",
+    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff"
+  },
+  "node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff2": {
+    "file": "assets/playfair-display-vietnamese-400-normal-BV2APVTb.woff2",
+    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff2"
+  },
   "src/js/main.js": {
-    "file": "assets/main-Bu77WhXf.js",
+    "file": "assets/main-CEOXOuU5.js",
     "name": "main",
     "src": "src/js/main.js",
     "isEntry": true,
     "css": [
-      "assets/main-DVLKNi-E.css"
+      "assets/main-TGfUmp84.css"
     ],
     "assets": [
       "assets/dm-serif-display-latin-ext-400-normal-p18AlW_x.woff2",
@@ -117,7 +149,15 @@
       "assets/pinyon-script-latin-ext-400-normal-DzUoH_k9.woff2",
       "assets/pinyon-script-latin-ext-400-normal-Cu_llAZZ.woff",
       "assets/pinyon-script-latin-400-normal-HCoaxbyT.woff2",
-      "assets/pinyon-script-latin-400-normal-3W0BoeAr.woff"
+      "assets/pinyon-script-latin-400-normal-3W0BoeAr.woff",
+      "assets/playfair-display-cyrillic-400-normal-CjW2EstV.woff2",
+      "assets/playfair-display-cyrillic-400-normal-ZiRag6zj.woff",
+      "assets/playfair-display-vietnamese-400-normal-BV2APVTb.woff2",
+      "assets/playfair-display-vietnamese-400-normal-BbvUAu4N.woff",
+      "assets/playfair-display-latin-ext-400-normal-BxlSGspa.woff2",
+      "assets/playfair-display-latin-ext-400-normal-qdZwdvNS.woff",
+      "assets/playfair-display-latin-400-normal-CFtfchNt.woff2",
+      "assets/playfair-display-latin-400-normal-DHYHbkg3.woff"
     ]
   }
 }
