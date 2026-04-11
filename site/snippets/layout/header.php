@@ -23,19 +23,19 @@
 
     <!-- Logo: tower + text -->
     <a href="<?= $site->url() ?>" class="hover:opacity-80 transition-opacity flex items-center gap-2 shrink-0">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48" fill="none" class="h-7 w-auto">
-        <g stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" fill="none">
-          <path d="M12 2 L8 10 L16 10 Z"/>
-          <rect x="7" y="10" width="10" height="34" rx="0.3"/>
-          <line x1="7" y1="10" x2="7" y2="8"/><line x1="9.5" y1="10" x2="9.5" y2="8"/>
-          <line x1="14.5" y1="10" x2="14.5" y2="8"/><line x1="17" y1="10" x2="17" y2="8"/>
-          <path d="M10 44 L10 39 A2 2 0 0 1 14 39 L14 44"/>
-          <rect x="9.5" y="16" width="2" height="3" rx="1"/>
-          <rect x="12.5" y="16" width="2" height="3" rx="1"/>
-          <rect x="9.5" y="22" width="2" height="3" rx="1"/>
-          <rect x="12.5" y="22" width="2" height="3" rx="1"/>
-          <rect x="9.5" y="28" width="2" height="3" rx="1"/>
-          <rect x="12.5" y="28" width="2" height="3" rx="1"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 44" fill="none" class="h-7 w-auto">
+        <g stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <rect x="3" y="12" width="24" height="32" rx="0.5"/>
+          <rect x="5" y="6" width="4" height="8"/>
+          <rect x="21" y="6" width="4" height="8"/>
+          <line x1="5" y1="6" x2="5" y2="3.5"/><line x1="7" y1="6" x2="7" y2="3.5"/><line x1="9" y1="6" x2="9" y2="3.5"/>
+          <line x1="21" y1="6" x2="21" y2="3.5"/><line x1="23" y1="6" x2="23" y2="3.5"/><line x1="25" y1="6" x2="25" y2="3.5"/>
+          <path d="M11 44 L11 36 A4 4 0 0 1 19 36 L19 44"/>
+          <circle cx="15" cy="24" r="2.5"/>
+          <rect x="7" y="18" width="2" height="3" rx="0.5"/>
+          <rect x="21" y="18" width="2" height="3" rx="0.5"/>
+          <rect x="7" y="26" width="2" height="3" rx="0.5"/>
+          <rect x="21" y="26" width="2" height="3" rx="0.5"/>
         </g>
       </svg>
       <span class="font-logo text-3xl whitespace-nowrap text-light">Porta Vecia</span>

@@ -6,7 +6,7 @@
 @import "@fontsource/dm-sans/500.css";
 @import "@fontsource/dm-sans/700.css";
 @import "@fontsource/pinyon-script/400.css";
-@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cinzel/400.css";
 
 @theme {
   --color-primary: oklch(0.72 0.1 75);
@@ -17,7 +17,7 @@
   --font-heading: 'DM Serif Display', serif;
   --font-body: 'DM Sans', sans-serif;
   --font-script: 'Pinyon Script', cursive;
-  --font-logo: 'Cormorant Garamond', serif;
+  --font-logo: 'Cinzel', serif;
 }
 
 @layer base {
