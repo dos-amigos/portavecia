@@ -1,11 +1,11 @@
 <div class="flex items-center gap-5 bg-dark/50 border border-light/10 rounded-lg p-5">
   <!-- Circular photo -->
-  <div class="shrink-0 w-28 h-28 rounded-full overflow-hidden border-2 border-primary/30">
+  <div class="shrink-0 w-36 h-36 rounded-full overflow-hidden border-2 border-primary/30">
     <?php if ($photo = $dish->photo()->toFile()): ?>
       <?php snippet('components/responsive-image', [
           'image' => $photo,
           'preset' => 'card',
-          'sizes' => '112px',
+          'sizes' => '144px',
           'alt' => $dish->dish_name()->value(),
           'class' => 'w-full h-full object-cover',
       ]) ?>
