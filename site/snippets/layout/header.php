@@ -23,20 +23,19 @@
 
     <!-- Logo: tower + text -->
     <a href="<?= $site->url() ?>" class="hover:opacity-80 transition-opacity flex items-center gap-2 shrink-0">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 44" fill="none" class="h-7 w-auto">
-        <g stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
-          <rect x="6" y="16" width="16" height="24" rx="0.5"/>
-          <rect x="8" y="10" width="12" height="8" rx="0.5"/>
-          <line x1="8" y1="10" x2="8" y2="7"/>
-          <line x1="11" y1="10" x2="11" y2="7"/>
-          <line x1="14" y1="10" x2="14" y2="5"/>
-          <line x1="17" y1="10" x2="17" y2="7"/>
-          <line x1="20" y1="10" x2="20" y2="7"/>
-          <path d="M12 40 L12 35 A2 2 0 0 1 16 35 L16 40"/>
-          <rect x="9" y="20" width="2.5" height="3.5" rx="0.8"/>
-          <rect x="16.5" y="20" width="2.5" height="3.5" rx="0.8"/>
-          <rect x="9" y="26" width="2.5" height="3.5" rx="0.8"/>
-          <rect x="16.5" y="26" width="2.5" height="3.5" rx="0.8"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48" fill="none" class="h-7 w-auto">
+        <g stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M12 2 L8 10 L16 10 Z"/>
+          <rect x="7" y="10" width="10" height="34" rx="0.3"/>
+          <line x1="7" y1="10" x2="7" y2="8"/><line x1="9.5" y1="10" x2="9.5" y2="8"/>
+          <line x1="14.5" y1="10" x2="14.5" y2="8"/><line x1="17" y1="10" x2="17" y2="8"/>
+          <path d="M10 44 L10 39 A2 2 0 0 1 14 39 L14 44"/>
+          <rect x="9.5" y="16" width="2" height="3" rx="1"/>
+          <rect x="12.5" y="16" width="2" height="3" rx="1"/>
+          <rect x="9.5" y="22" width="2" height="3" rx="1"/>
+          <rect x="12.5" y="22" width="2" height="3" rx="1"/>
+          <rect x="9.5" y="28" width="2" height="3" rx="1"/>
+          <rect x="12.5" y="28" width="2" height="3" rx="1"/>
         </g>
       </svg>
       <span class="font-logo text-3xl whitespace-nowrap text-light">Porta Vecia</span>
@@ -93,23 +92,22 @@
 >
   <!-- Logo in white at top -->
   <div class="absolute top-6 left-1/2 flex items-center gap-2" style="transform: translateX(-50%)">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 44" fill="none" class="h-7 w-auto">
-      <g stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
-        <rect x="6" y="16" width="16" height="24" rx="0.5"/>
-        <rect x="8" y="10" width="12" height="8" rx="0.5"/>
-        <line x1="8" y1="10" x2="8" y2="7"/>
-        <line x1="11" y1="10" x2="11" y2="7"/>
-        <line x1="14" y1="10" x2="14" y2="5"/>
-        <line x1="17" y1="10" x2="17" y2="7"/>
-        <line x1="20" y1="10" x2="20" y2="7"/>
-        <path d="M12 40 L12 35 A2 2 0 0 1 16 35 L16 40"/>
-        <rect x="9" y="20" width="2.5" height="3.5" rx="0.8"/>
-        <rect x="16.5" y="20" width="2.5" height="3.5" rx="0.8"/>
-        <rect x="9" y="26" width="2.5" height="3.5" rx="0.8"/>
-        <rect x="16.5" y="26" width="2.5" height="3.5" rx="0.8"/>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48" fill="none" class="h-7 w-auto">
+      <g stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path d="M12 2 L8 10 L16 10 Z"/>
+        <rect x="7" y="10" width="10" height="34" rx="0.3"/>
+        <line x1="7" y1="10" x2="7" y2="8"/><line x1="9.5" y1="10" x2="9.5" y2="8"/>
+        <line x1="14.5" y1="10" x2="14.5" y2="8"/><line x1="17" y1="10" x2="17" y2="8"/>
+        <path d="M10 44 L10 39 A2 2 0 0 1 14 39 L14 44"/>
+        <rect x="9.5" y="16" width="2" height="3" rx="1"/>
+        <rect x="12.5" y="16" width="2" height="3" rx="1"/>
+        <rect x="9.5" y="22" width="2" height="3" rx="1"/>
+        <rect x="12.5" y="22" width="2" height="3" rx="1"/>
+        <rect x="9.5" y="28" width="2" height="3" rx="1"/>
+        <rect x="12.5" y="28" width="2" height="3" rx="1"/>
       </g>
     </svg>
-    <span class="font-logo text-3xl text-light">Porta Vecia</span>
+    <span class="font-logo text-3xl text-light whitespace-nowrap">Porta Vecia</span>
   </div>
 
   <!-- Close button -->

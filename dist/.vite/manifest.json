@@ -1,4 +1,44 @@
 {
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-400-normal.woff": {
+    "file": "assets/cormorant-garamond-cyrillic-400-normal-CVFrM67f.woff",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-400-normal.woff"
+  },
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-400-normal.woff2": {
+    "file": "assets/cormorant-garamond-cyrillic-400-normal-DD2KOZkl.woff2",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-400-normal.woff": {
+    "file": "assets/cormorant-garamond-cyrillic-ext-400-normal-DLdKLAvx.woff",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-400-normal.woff2": {
+    "file": "assets/cormorant-garamond-cyrillic-ext-400-normal-W3Dto7M0.woff2",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-400-normal.woff": {
+    "file": "assets/cormorant-garamond-latin-400-normal-B7YtguxJ.woff",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-400-normal.woff2": {
+    "file": "assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-400-normal.woff": {
+    "file": "assets/cormorant-garamond-latin-ext-400-normal-uvC0WHQr.woff",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-400-normal.woff2": {
+    "file": "assets/cormorant-garamond-latin-ext-400-normal-Drx2k2n9.woff2",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-400-normal.woff": {
+    "file": "assets/cormorant-garamond-vietnamese-400-normal-4uxlocMh.woff",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-400-normal.woff"
+  },
+  "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-400-normal.woff2": {
+    "file": "assets/cormorant-garamond-vietnamese-400-normal-6K-YXo6g.woff2",
+    "src": "node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-400-normal.woff2"
+  },
   "node_modules/@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff": {
     "file": "assets/dm-sans-latin-400-normal-BwCSEQnW.woff",
     "src": "node_modules/@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff"
@@ -87,45 +127,13 @@
     "file": "assets/pinyon-script-vietnamese-400-normal-D9IEVGR9.woff2",
     "src": "node_modules/@fontsource/pinyon-script/files/pinyon-script-vietnamese-400-normal.woff2"
   },
-  "node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff": {
-    "file": "assets/playfair-display-cyrillic-400-normal-ZiRag6zj.woff",
-    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff"
-  },
-  "node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff2": {
-    "file": "assets/playfair-display-cyrillic-400-normal-CjW2EstV.woff2",
-    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff2"
-  },
-  "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff": {
-    "file": "assets/playfair-display-latin-400-normal-DHYHbkg3.woff",
-    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff"
-  },
-  "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff2": {
-    "file": "assets/playfair-display-latin-400-normal-CFtfchNt.woff2",
-    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff2"
-  },
-  "node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff": {
-    "file": "assets/playfair-display-latin-ext-400-normal-qdZwdvNS.woff",
-    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff"
-  },
-  "node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff2": {
-    "file": "assets/playfair-display-latin-ext-400-normal-BxlSGspa.woff2",
-    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff2"
-  },
-  "node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff": {
-    "file": "assets/playfair-display-vietnamese-400-normal-BbvUAu4N.woff",
-    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff"
-  },
-  "node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff2": {
-    "file": "assets/playfair-display-vietnamese-400-normal-BV2APVTb.woff2",
-    "src": "node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff2"
-  },
   "src/js/main.js": {
-    "file": "assets/main-CEOXOuU5.js",
+    "file": "assets/main-2QKJiX4s.js",
     "name": "main",
     "src": "src/js/main.js",
     "isEntry": true,
     "css": [
-      "assets/main-TGfUmp84.css"
+      "assets/main-D_WckxMa.css"
     ],
     "assets": [
       "assets/dm-serif-display-latin-ext-400-normal-p18AlW_x.woff2",
@@ -150,14 +158,16 @@
       "assets/pinyon-script-latin-ext-400-normal-Cu_llAZZ.woff",
       "assets/pinyon-script-latin-400-normal-HCoaxbyT.woff2",
       "assets/pinyon-script-latin-400-normal-3W0BoeAr.woff",
-      "assets/playfair-display-cyrillic-400-normal-CjW2EstV.woff2",
-      "assets/playfair-display-cyrillic-400-normal-ZiRag6zj.woff",
-      "assets/playfair-display-vietnamese-400-normal-BV2APVTb.woff2",
-      "assets/playfair-display-vietnamese-400-normal-BbvUAu4N.woff",
-      "assets/playfair-display-latin-ext-400-normal-BxlSGspa.woff2",
-      "assets/playfair-display-latin-ext-400-normal-qdZwdvNS.woff",
-      "assets/playfair-display-latin-400-normal-CFtfchNt.woff2",
-      "assets/playfair-display-latin-400-normal-DHYHbkg3.woff"
+      "assets/cormorant-garamond-cyrillic-ext-400-normal-W3Dto7M0.woff2",
+      "assets/cormorant-garamond-cyrillic-ext-400-normal-DLdKLAvx.woff",
+      "assets/cormorant-garamond-cyrillic-400-normal-DD2KOZkl.woff2",
+      "assets/cormorant-garamond-cyrillic-400-normal-CVFrM67f.woff",
+      "assets/cormorant-garamond-vietnamese-400-normal-6K-YXo6g.woff2",
+      "assets/cormorant-garamond-vietnamese-400-normal-4uxlocMh.woff",
+      "assets/cormorant-garamond-latin-ext-400-normal-Drx2k2n9.woff2",
+      "assets/cormorant-garamond-latin-ext-400-normal-uvC0WHQr.woff",
+      "assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+      "assets/cormorant-garamond-latin-400-normal-B7YtguxJ.woff"
     ]
   }
 }
