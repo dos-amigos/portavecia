@@ -1,9 +1,16 @@
 <?php
 
 return [
-    'debug' => true,
+    'debug' => false,
     'languages' => true,
     'languages.detect' => false,
+
+    // Email transport via PHP mail()
+    'email' => [
+        'transport' => [
+            'type' => 'mail'
+        ]
+    ],
 
     'johannschopplich.helpers.vite' => [
         'entry' => 'src/js/main.js',

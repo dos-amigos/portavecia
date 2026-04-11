@@ -120,12 +120,12 @@
     "src": "node_modules/@fontsource/pinyon-script/files/pinyon-script-vietnamese-400-normal.woff2"
   },
   "src/js/main.js": {
-    "file": "assets/main-w9EdQCxv.js",
+    "file": "assets/main-D4vy5Kv8.js",
     "name": "main",
     "src": "src/js/main.js",
     "isEntry": true,
     "css": [
-      "assets/main--tJO_Q-m.css"
+      "assets/main-Y9Erl2bc.css"
     ],
     "assets": [
       "assets/dm-serif-display-latin-ext-400-normal-p18AlW_x.woff2",
