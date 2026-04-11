@@ -101,7 +101,7 @@
   aria-label="Mobile"
 >
   <!-- Logo in white at top -->
-  <div class="absolute top-6 left-1/2 flex items-center gap-2" style="transform: translateX(-50%)">
+  <div class="absolute top-6 left-5 flex items-center gap-2">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48" fill="none" class="h-7 w-auto">
       <g stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" fill="none">
         <path d="M12 2 L8 10 L16 10 Z"/>
