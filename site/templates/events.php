@@ -7,7 +7,7 @@
     <section class="section-padding">
       <div class="container-site">
         <h2 class="text-xl font-heading text-primary mb-8"><?= t('events.upcoming') ?></h2>
-        <div class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <?php foreach ($upcoming as $event): ?>
             <?php snippet('sections/event-card', ['event' => $event, 'isPast' => false, 'whatsapp' => $whatsapp]) ?>
           <?php endforeach ?>
@@ -27,9 +27,9 @@
   <!-- Past Events -->
   <?php if ($past->count() > 0): ?>
     <section class="section-padding">
-      <div class="container-site border-t border-light/10 mt-0 pt-8">
+      <div class="container-site border-t border-light/10 mt-12 pt-8">
         <h2 class="text-xl font-heading text-light/50 mb-8"><?= t('events.past') ?></h2>
-        <div class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <?php foreach ($past as $event): ?>
             <?php snippet('sections/event-card', ['event' => $event, 'isPast' => true, 'whatsapp' => $whatsapp]) ?>
           <?php endforeach ?>

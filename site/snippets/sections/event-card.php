@@ -1,6 +1,6 @@
-<div class="bg-dark/50 border border-light/10 rounded-lg overflow-hidden flex flex-col md:flex-row<?= $isPast ? ' opacity-60' : '' ?>">
+<div class="bg-dark/50 border border-light/10 rounded-lg overflow-hidden flex flex-col<?= $isPast ? ' opacity-60' : '' ?>">
   <?php if ($photo = $event->photo()->toFile()): ?>
-    <div class="md:w-1/3 h-48 md:h-auto">
+    <div class="h-56">
       <?php snippet('components/responsive-image', [
           'image' => $photo,
           'preset' => 'card',
