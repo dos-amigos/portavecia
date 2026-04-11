@@ -17,24 +17,26 @@ $waNumber = $whatsapp ? str_replace(['+', ' '], '', $whatsapp) : '';
 
   <!-- Poster image fallback (mobile or no video) -->
   <?php if ($poster): ?>
-    <?php snippet('components/responsive-image', [
-        'image' => $poster,
-        'preset' => 'default',
-        'sizes' => '100vw',
-        'lazy' => false,
-        'alt' => $page->hero_title()->value(),
-        'class' => 'absolute inset-0 w-full h-full object-cover ' . ($video ? 'md:hidden' : ''),
-    ]) ?>
+    <div class="parallax-hero absolute inset-0 w-full h-[120%] -top-[10%]">
+      <?php snippet('components/responsive-image', [
+          'image' => $poster,
+          'preset' => 'default',
+          'sizes' => '100vw',
+          'lazy' => false,
+          'alt' => $page->hero_title()->value(),
+          'class' => 'w-full h-full object-cover ' . ($video ? 'md:hidden' : ''),
+      ]) ?>
+    </div>
   <?php endif ?>
 
-  <!-- Dark gradient overlay -->
-  <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.7) 100%);"></div>
+  <!-- Dark gradient overlay — darker for text readability -->
+  <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 100%);"></div>
 
   <!-- Content -->
   <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
-    <p class="label-text mb-4 reveal" style="opacity:0; transform:translateY(20px)">Enoteca & Cucina Cinese</p>
-    <h1 class="font-heading text-6xl md:text-8xl lg:text-9xl text-light mb-6 reveal" style="opacity:0; transform:translateY(40px)">
-      <?= $page->hero_title()->html() ?>
+    <p class="font-script text-3xl md:text-4xl text-primary/80 mb-2 reveal" style="opacity:0; transform:translateY(20px)"><?= t('footer.location') ?></p>
+    <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl text-light mb-4 reveal" style="opacity:0; transform:translateY(40px)">
+      <?= t('hero.tagline') ?>
     </h1>
     <div class="section-divider reveal" style="opacity:0; transform:translateY(20px)"></div>
     <?php if ($page->hero_subtitle()->isNotEmpty()): ?>

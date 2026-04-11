@@ -1,19 +1,35 @@
 {
-  "node_modules/@fontsource/cinzel/files/cinzel-latin-400-normal.woff": {
-    "file": "assets/cinzel-latin-400-normal-C8jUSQqm.woff",
-    "src": "node_modules/@fontsource/cinzel/files/cinzel-latin-400-normal.woff"
+  "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-400-normal.woff": {
+    "file": "assets/bodoni-moda-latin-400-normal-9rKXKbpF.woff",
+    "src": "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-400-normal.woff"
   },
-  "node_modules/@fontsource/cinzel/files/cinzel-latin-400-normal.woff2": {
-    "file": "assets/cinzel-latin-400-normal-DnUIPmzd.woff2",
-    "src": "node_modules/@fontsource/cinzel/files/cinzel-latin-400-normal.woff2"
+  "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-400-normal.woff2": {
+    "file": "assets/bodoni-moda-latin-400-normal-CIWtV3SY.woff2",
+    "src": "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-400-normal.woff2"
   },
-  "node_modules/@fontsource/cinzel/files/cinzel-latin-ext-400-normal.woff": {
-    "file": "assets/cinzel-latin-ext-400-normal-DJ0Lq8y-.woff",
-    "src": "node_modules/@fontsource/cinzel/files/cinzel-latin-ext-400-normal.woff"
+  "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-ext-400-normal.woff": {
+    "file": "assets/bodoni-moda-latin-ext-400-normal-Do8lbhET.woff",
+    "src": "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-ext-400-normal.woff"
   },
-  "node_modules/@fontsource/cinzel/files/cinzel-latin-ext-400-normal.woff2": {
-    "file": "assets/cinzel-latin-ext-400-normal-XQK_CSAr.woff2",
-    "src": "node_modules/@fontsource/cinzel/files/cinzel-latin-ext-400-normal.woff2"
+  "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-ext-400-normal.woff2": {
+    "file": "assets/bodoni-moda-latin-ext-400-normal-Dc1RgLRZ.woff2",
+    "src": "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-latin-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-math-400-normal.woff": {
+    "file": "assets/bodoni-moda-math-400-normal-BJZYRKLS.woff",
+    "src": "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-math-400-normal.woff"
+  },
+  "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-math-400-normal.woff2": {
+    "file": "assets/bodoni-moda-math-400-normal-BlAlXPk8.woff2",
+    "src": "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-math-400-normal.woff2"
+  },
+  "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-symbols-400-normal.woff": {
+    "file": "assets/bodoni-moda-symbols-400-normal-XozWO_2V.woff",
+    "src": "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-symbols-400-normal.woff"
+  },
+  "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-symbols-400-normal.woff2": {
+    "file": "assets/bodoni-moda-symbols-400-normal-BF8K6fhx.woff2",
+    "src": "node_modules/@fontsource/bodoni-moda/files/bodoni-moda-symbols-400-normal.woff2"
   },
   "node_modules/@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff": {
     "file": "assets/dm-sans-latin-400-normal-BwCSEQnW.woff",
@@ -104,12 +120,12 @@
     "src": "node_modules/@fontsource/pinyon-script/files/pinyon-script-vietnamese-400-normal.woff2"
   },
   "src/js/main.js": {
-    "file": "assets/main-BIr1x9Xb.js",
+    "file": "assets/main-w9EdQCxv.js",
     "name": "main",
     "src": "src/js/main.js",
     "isEntry": true,
     "css": [
-      "assets/main-M8XLzDYI.css"
+      "assets/main--tJO_Q-m.css"
     ],
     "assets": [
       "assets/dm-serif-display-latin-ext-400-normal-p18AlW_x.woff2",
@@ -134,10 +150,14 @@
       "assets/pinyon-script-latin-ext-400-normal-Cu_llAZZ.woff",
       "assets/pinyon-script-latin-400-normal-HCoaxbyT.woff2",
       "assets/pinyon-script-latin-400-normal-3W0BoeAr.woff",
-      "assets/cinzel-latin-ext-400-normal-XQK_CSAr.woff2",
-      "assets/cinzel-latin-ext-400-normal-DJ0Lq8y-.woff",
-      "assets/cinzel-latin-400-normal-DnUIPmzd.woff2",
-      "assets/cinzel-latin-400-normal-C8jUSQqm.woff"
+      "assets/bodoni-moda-math-400-normal-BlAlXPk8.woff2",
+      "assets/bodoni-moda-math-400-normal-BJZYRKLS.woff",
+      "assets/bodoni-moda-symbols-400-normal-BF8K6fhx.woff2",
+      "assets/bodoni-moda-symbols-400-normal-XozWO_2V.woff",
+      "assets/bodoni-moda-latin-ext-400-normal-Dc1RgLRZ.woff2",
+      "assets/bodoni-moda-latin-ext-400-normal-Do8lbhET.woff",
+      "assets/bodoni-moda-latin-400-normal-CIWtV3SY.woff2",
+      "assets/bodoni-moda-latin-400-normal-9rKXKbpF.woff"
     ]
   }
 }
