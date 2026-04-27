@@ -25,7 +25,7 @@
         <?php endif ?>
       </div>
       <?php if ($wine->price()->isNotEmpty()): ?>
-        <span class="text-primary font-heading text-2xl mt-2 md:mt-0">&euro; <?= $wine->price() ?></span>
+        <span class="text-primary font-heading mt-2 md:mt-0" style="font-size:0.9rem"><?= $wine->price() ?></span>
       <?php endif ?>
     </div>
 
