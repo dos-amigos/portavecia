@@ -13,7 +13,11 @@
   <div class="p-6 flex-1 flex flex-col justify-between">
     <div>
       <p class="text-primary font-bold text-sm uppercase tracking-wider mb-2">
-        <?= $event->event_date()->toDate('d F Y') ?><?php if ($event->event_time()->isNotEmpty()): ?> &mdash; <?= t('event.ore') ?> <?= $event->event_time() ?><?php endif ?>
+        <?php if ($event->event_date()->toDate('Y') >= 2090): ?>
+          <?= t('event.recurring', 'Tutti i giorni') ?><?php if ($event->event_time()->isNotEmpty()): ?> &mdash; <?= t('event.ore') ?> <?= $event->event_time() ?><?php endif ?>
+        <?php else: ?>
+          <?= $event->event_date()->toDate('d F Y') ?><?php if ($event->event_time()->isNotEmpty()): ?> &mdash; <?= t('event.ore') ?> <?= $event->event_time() ?><?php endif ?>
+        <?php endif ?>
       </p>
       <h3 class="font-heading text-xl text-light mb-3"><?= $event->title() ?></h3>
       <?php if ($event->description()->isNotEmpty()): ?>
@@ -23,11 +27,14 @@
     <?php if (!$isPast && $event->whatsapp_booking()->toBool()): ?>
       <?php
         $cleanPhone = str_replace(['+', ' '], '', $whatsapp);
-        $message = str_replace(
-          ['{event}', '{date}'],
-          [$event->title()->value(), $event->event_date()->toDate('d/m/Y')],
-          t('event.whatsapp_message')
-        );
+        $isRecurring = $event->event_date()->toDate('Y') >= 2090;
+        $message = $isRecurring
+          ? t('whatsapp.default_message')
+          : str_replace(
+              ['{event}', '{date}'],
+              [$event->title()->value(), $event->event_date()->toDate('d/m/Y')],
+              t('event.whatsapp_message')
+            );
       ?>
       <a href="https://wa.me/<?= $cleanPhone ?>?text=<?= rawurlencode($message) ?>"
          class="btn-primary text-center mt-4"

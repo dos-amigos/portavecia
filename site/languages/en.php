@@ -66,6 +66,7 @@ return [
         'event.prenota' => 'Book on WhatsApp',
         'event.whatsapp_message' => 'Hi! I\'d like to book for the event "{event}" on {date}.',
         'event.ore' => 'at',
+        'event.recurring' => 'Every day',
         'home.experience_label' => 'The Experience',
         'about.fusion_label' => 'Two Traditions',
         'hero.tagline' => 'Wine Bar &<br>Chinese Cuisine',

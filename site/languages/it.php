@@ -67,6 +67,7 @@ return [
         'event.prenota' => 'Prenota su WhatsApp',
         'event.whatsapp_message' => 'Ciao! Vorrei prenotare per l\'evento "{event}" del {date}.',
         'event.ore' => 'ore',
+        'event.recurring' => 'Tutti i giorni',
         'home.experience_label' => 'L\'Esperienza',
         'about.fusion_label' => 'Due Tradizioni',
         'hero.tagline' => 'Enoteca &<br>Cucina Cinese',
