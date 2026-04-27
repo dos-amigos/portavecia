@@ -23,7 +23,7 @@ tabs:
         label: Via (per Google)
         type: text
         translate: false
-        help: "Es: Via Matteotti 30"
+        help: "Es: Via Giacomo Matteotti, 44"
       city:
         label: Citta
         type: text
