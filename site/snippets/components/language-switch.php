@@ -1,3 +1,4 @@
+<?php if ($kirby->languages()->count() > 1): ?>
 <nav class="flex items-center gap-1" aria-label="Language">
   <?php $langs = $kirby->languages()->values(); $count = count($langs); ?>
   <?php foreach ($langs as $i => $language): ?>
@@ -12,3 +13,4 @@
     <?php endif ?>
   <?php endforeach ?>
 </nav>
+<?php endif ?>
