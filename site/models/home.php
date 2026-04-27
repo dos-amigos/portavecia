@@ -7,37 +7,117 @@ class HomePage extends Page
     public function metadata(): array
     {
         $site = $this->site();
+        $whatsappNumber = str_replace(['+', ' '], '', $site->whatsapp()->value());
 
         return [
             'jsonld' => [
-                'Restaurant' => [
-                    '@type'          => 'Restaurant',
-                    'name'           => $site->title()->value(),
-                    'description'    => $this->description()->isNotEmpty()
-                        ? $this->description()->value()
-                        : 'Enoteca con cucina cinese autentica fatta in casa nel centro storico di Este',
-                    'url'            => $site->url(),
-                    'telephone'      => $site->phone()->value(),
-                    'servesCuisine'  => ['Italian Wine Bar', 'Chinese Cuisine'],
-                    'priceRange'     => '$$',
-                    'address'        => [
-                        '@type'            => 'PostalAddress',
-                        'streetAddress'    => $site->street_address()->value(),
-                        'addressLocality'  => $site->city()->or('Este')->value(),
-                        'addressRegion'    => 'PD',
-                        'postalCode'       => $site->postal_code()->or('35042')->value(),
-                        'addressCountry'   => 'IT',
+                'Restaurant' => $this->buildRestaurantSchema($site, $whatsappNumber),
+                'BreadcrumbList' => $this->buildBreadcrumbList($site),
+                'WebSite' => [
+                    '@type'  => 'WebSite',
+                    'name'   => $site->title()->value(),
+                    'url'    => $site->url(),
+                    'inLanguage'    => ['it', 'en'],
+                    'potentialAction' => [
+                        '@type'       => 'SearchAction',
+                        'target'      => $site->url() . '/?q={search_term_string}',
+                        'query-input' => 'required name=search_term_string',
                     ],
-                    'geo' => [
-                        '@type'     => 'GeoCoordinates',
-                        'latitude'  => $site->latitude()->value(),
-                        'longitude' => $site->longitude()->value(),
+                ],
+            ],
+        ];
+    }
+
+    protected function buildRestaurantSchema($site, string $whatsappNumber): array
+    {
+        $menuPage = $site->find('cucina');
+
+        $schema = [
+            '@type'              => ['Restaurant', 'WineBar', 'LocalBusiness'],
+            'name'               => $site->title()->value(),
+            'description'        => $this->description()->isNotEmpty()
+                ? $this->description()->value()
+                : 'Enoteca con cucina cinese autentica fatta in casa nel centro storico di Este',
+            'url'                => $site->url(),
+            'telephone'          => $site->phone()->value(),
+            'email'              => $site->email()->value(),
+            'servesCuisine'      => ['Cucina Cinese Autentica', 'Cucina di Wenzhou', 'Wine Bar', 'Aperitivo'],
+            'priceRange'         => '€€',
+            'acceptsReservations' => true,
+            'hasMenu'            => $menuPage ? $menuPage->url() : null,
+            'paymentAccepted'    => 'Cash, Credit Card',
+            'currenciesAccepted' => 'EUR',
+            'address'            => [
+                '@type'            => 'PostalAddress',
+                'streetAddress'    => $site->street_address()->value(),
+                'addressLocality'  => $site->city()->or('Este')->value(),
+                'addressRegion'    => 'PD',
+                'postalCode'       => $site->postal_code()->or('35042')->value(),
+                'addressCountry'   => 'IT',
+            ],
+            'geo' => [
+                '@type'     => 'GeoCoordinates',
+                'latitude'  => $site->latitude()->value(),
+                'longitude' => $site->longitude()->value(),
+            ],
+            'openingHoursSpecification' => $this->buildOpeningHours($site),
+            'areaServed' => [
+                ['@type' => 'City', 'name' => 'Este'],
+                ['@type' => 'City', 'name' => 'Monselice'],
+                ['@type' => 'City', 'name' => 'Montagnana'],
+                ['@type' => 'City', 'name' => 'Abano Terme'],
+                ['@type' => 'City', 'name' => 'Padova'],
+                ['@type' => 'Place', 'name' => 'Colli Euganei'],
+            ],
+            'founder' => [
+                '@type'       => 'Person',
+                'name'        => 'Angela',
+                'birthPlace'  => [
+                    '@type' => 'City',
+                    'name'  => 'Wenzhou',
+                    'containedInPlace' => [
+                        '@type' => 'Country',
+                        'name'  => 'China',
                     ],
-                    'openingHoursSpecification' => $this->buildOpeningHours($site),
-                    'menu'  => $site->find('cucina') ? $site->find('cucina')->url() : null,
-                    'image' => $this->thumbnail()->isNotEmpty()
-                        ? $this->thumbnail()->toFile()?->url()
-                        : null,
+                ],
+            ],
+            'sameAs' => [
+                'https://www.instagram.com/portaveciaeste/',
+            ],
+            'keywords' => 'enoteca este, cucina cinese este, wine bar este, aperitivo este, ravioli cinesi este, cucina di wenzhou, ristorante cinese padova, enoteca colli euganei, vini este, porta vecia',
+            'image' => $this->thumbnail()->isNotEmpty()
+                ? $this->thumbnail()->toFile()?->url()
+                : null,
+            'potentialAction' => [
+                '@type'  => 'ReserveAction',
+                'target' => [
+                    '@type'       => 'EntryPoint',
+                    'urlTemplate' => 'https://wa.me/' . $whatsappNumber,
+                    'actionPlatform' => [
+                        'https://schema.org/DesktopWebPlatform',
+                        'https://schema.org/MobileWebPlatform',
+                    ],
+                ],
+                'result' => [
+                    '@type'          => 'Reservation',
+                    'name'           => 'Prenota un tavolo a Porta Vecia',
+                ],
+            ],
+        ];
+
+        return $schema;
+    }
+
+    protected function buildBreadcrumbList($site): array
+    {
+        return [
+            '@type'           => 'BreadcrumbList',
+            'itemListElement' => [
+                [
+                    '@type'    => 'ListItem',
+                    'position' => 1,
+                    'name'     => 'Home',
+                    'item'     => $site->url(),
                 ],
             ],
         ];

@@ -2,24 +2,31 @@
 <html lang="<?= $kirby->language()->code() ?>">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- DNS-prefetch / preconnect for external resources (GLightbox, Leaflet, OSM tiles) -->
+  <!-- DNS-prefetch / preconnect for external resources -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <link rel="dns-prefetch" href="https://unpkg.com">
   <link rel="dns-prefetch" href="https://tile.openstreetmap.de">
+
   <title><?= $page->customtitle()->or($page->title()) ?> | <?= $site->title() ?></title>
+  <meta name="description" content="<?= $page->description()->or($site->description())->value() ?>">
+  <link rel="canonical" href="<?= $page->url() ?>">
 
   <?= $page->meta()->robots() ?>
   <?= $page->meta()->social() ?>
   <?= $page->meta()->jsonld() ?>
 
-  <?php foreach ($kirby->languages() as $lang): ?>
-  <link rel="alternate" hreflang="<?= $lang->code() ?>" href="<?= $page->url($lang->code()) ?>" />
-  <?php endforeach ?>
-  <link rel="alternate" hreflang="x-default" href="<?= $page->url($kirby->defaultLanguage()->code()) ?>" />
+  <link rel="alternate" hreflang="it" href="<?= $page->url() ?>" />
+  <link rel="alternate" hreflang="x-default" href="<?= $page->url() ?>" />
+
+  <!-- Geo tags for local SEO -->
+  <meta name="geo.region" content="IT-PD">
+  <meta name="geo.placename" content="Este">
+  <meta name="geo.position" content="45.2272;11.6574">
+  <meta name="ICBM" content="45.2272, 11.6574">
 
   <?= vite()->css('src/js/main.js') ?>
 </head>
