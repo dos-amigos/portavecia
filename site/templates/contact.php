@@ -102,7 +102,7 @@
       <form method="POST" action="<?= $page->url() ?>"
             x-data="{ loading: false }"
             @submit="loading = true">
-        <?= csrf_field() ?>
+        <input type="hidden" name="csrf" value="<?= csrf() ?>">
 
         <!-- Honeypot (hidden from humans) -->
         <div class="absolute opacity-0 pointer-events-none" aria-hidden="true" tabindex="-1">
