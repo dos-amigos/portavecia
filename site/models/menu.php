@@ -2,7 +2,7 @@
 
 use Kirby\Cms\Page;
 
-class ContactPage extends Page
+class MenuPage extends Page
 {
     public function metadata(): array
     {
@@ -12,6 +12,7 @@ class ContactPage extends Page
         return [
             'jsonld' => [
                 'Restaurant' => $this->buildRestaurantSchema($site, $whatsappNumber),
+                'Menu' => $this->buildMenuSchema(),
                 'BreadcrumbList' => [
                     '@type'           => 'BreadcrumbList',
                     'itemListElement' => [
@@ -33,10 +34,61 @@ class ContactPage extends Page
         ];
     }
 
+    protected function buildMenuSchema(): array
+    {
+        $categories = [
+            'antipasti' => 'Antipasti',
+            'primi'     => 'Primi Piatti',
+            'secondi'   => 'Secondi Piatti',
+            'zuppe'     => 'Zuppe',
+            'dolci'     => 'Dolci',
+        ];
+
+        $menuSections = [];
+
+        foreach ($categories as $field => $label) {
+            $dishes = $this->$field()->toStructure();
+            if ($dishes->count() === 0) continue;
+
+            $menuItems = [];
+            foreach ($dishes as $dish) {
+                $item = [
+                    '@type' => 'MenuItem',
+                    'name'  => $dish->dish_name()->value(),
+                ];
+
+                if ($dish->description()->isNotEmpty()) {
+                    $item['description'] = $dish->description()->value();
+                }
+
+                if ($dish->price()->isNotEmpty()) {
+                    $item['offers'] = [
+                        '@type'         => 'Offer',
+                        'price'         => $dish->price()->value(),
+                        'priceCurrency' => 'EUR',
+                    ];
+                }
+
+                $menuItems[] = $item;
+            }
+
+            $menuSections[] = [
+                '@type'        => 'MenuSection',
+                'name'         => $label,
+                'hasMenuItem'  => $menuItems,
+            ];
+        }
+
+        return [
+            '@type'          => 'Menu',
+            'name'           => 'Menu Porta Vecia',
+            'description'    => 'Cucina cinese autentica di Wenzhou fatta in casa',
+            'hasMenuSection' => $menuSections,
+        ];
+    }
+
     protected function buildRestaurantSchema($site, string $whatsappNumber): array
     {
-        $menuPage = $site->find('cucina');
-
         return [
             '@type'              => ['Restaurant', 'WineBar', 'LocalBusiness'],
             'name'               => $site->title()->value(),
@@ -49,7 +101,7 @@ class ContactPage extends Page
             'servesCuisine'      => ['Cucina Cinese Autentica', 'Cucina di Wenzhou', 'Wine Bar', 'Aperitivo'],
             'priceRange'         => '€€',
             'acceptsReservations' => true,
-            'hasMenu'            => $menuPage ? $menuPage->url() : null,
+            'hasMenu'            => $this->url(),
             'paymentAccepted'    => 'Cash, Credit Card',
             'currenciesAccepted' => 'EUR',
             'address'            => [
