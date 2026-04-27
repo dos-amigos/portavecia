@@ -54,11 +54,11 @@
     <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-6" aria-label="Main">
       <a href="<?= $site->find('home') ? $site->find('home')->url() : $site->url() ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.home') ?></a>
-      <a href="<?= ($p = $site->find('about')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.about') ?></a>
-      <a href="<?= ($p = $site->find('menu')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.menu') ?></a>
-      <a href="<?= ($p = $site->find('wines')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.wines') ?></a>
-      <a href="<?= ($p = $site->find('events')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.events') ?></a>
-      <a href="<?= ($p = $site->find('contact')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.contact') ?></a>
+      <a href="<?= ($p = $site->find('chi-siamo')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.about') ?></a>
+      <a href="<?= ($p = $site->find('cucina')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.menu') ?></a>
+      <a href="<?= ($p = $site->find('vini')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.wines') ?></a>
+      <a href="<?= ($p = $site->find('eventi')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.events') ?></a>
+      <a href="<?= ($p = $site->find('contatti')) ? $p->url() : '#' ?>" class="text-light/80 hover:text-primary text-sm uppercase tracking-wider font-body transition-colors"><?= t('nav.contact') ?></a>
     </nav>
 
     <!-- Desktop language switch -->
@@ -137,23 +137,23 @@
        class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
        x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-100" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
     ><?= t('nav.home') ?></a>
-    <a @click="mobileOpen = false" href="<?= ($p = $site->find('about')) ? $p->url() : '#' ?>"
+    <a @click="mobileOpen = false" href="<?= ($p = $site->find('chi-siamo')) ? $p->url() : '#' ?>"
        class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
        x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-150" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
     ><?= t('nav.about') ?></a>
-    <a @click="mobileOpen = false" href="<?= ($p = $site->find('menu')) ? $p->url() : '#' ?>"
+    <a @click="mobileOpen = false" href="<?= ($p = $site->find('cucina')) ? $p->url() : '#' ?>"
        class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
        x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-200" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
     ><?= t('nav.menu') ?></a>
-    <a @click="mobileOpen = false" href="<?= ($p = $site->find('wines')) ? $p->url() : '#' ?>"
+    <a @click="mobileOpen = false" href="<?= ($p = $site->find('vini')) ? $p->url() : '#' ?>"
        class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
        x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-[250ms]" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
     ><?= t('nav.wines') ?></a>
-    <a @click="mobileOpen = false" href="<?= ($p = $site->find('events')) ? $p->url() : '#' ?>"
+    <a @click="mobileOpen = false" href="<?= ($p = $site->find('eventi')) ? $p->url() : '#' ?>"
        class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
        x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-300" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
     ><?= t('nav.events') ?></a>
-    <a @click="mobileOpen = false" href="<?= ($p = $site->find('contact')) ? $p->url() : '#' ?>"
+    <a @click="mobileOpen = false" href="<?= ($p = $site->find('contatti')) ? $p->url() : '#' ?>"
        class="text-light hover:text-primary font-heading text-3xl tracking-wide transition-colors duration-300"
        x-show="mobileOpen" x-transition:enter="transition ease-out duration-500 delay-[350ms]" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
     ><?= t('nav.contact') ?></a>

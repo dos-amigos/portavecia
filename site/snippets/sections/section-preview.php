@@ -1,8 +1,8 @@
 <?php
 $dishes = $page->featured_dishes()->toStructure();
 $wines = $page->featured_wines()->toStructure();
-$menuPage = $site->find('menu');
-$winesPage = $site->find('wines');
+$menuPage = $site->find('cucina');
+$winesPage = $site->find('vini');
 ?>
 <section class="section-padding bg-dark/80">
   <div class="container-site">

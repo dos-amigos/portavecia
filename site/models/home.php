@@ -34,7 +34,7 @@ class HomePage extends Page
                         'longitude' => $site->longitude()->value(),
                     ],
                     'openingHoursSpecification' => $this->buildOpeningHours($site),
-                    'menu'  => $site->find('menu') ? $site->find('menu')->url() : null,
+                    'menu'  => $site->find('cucina') ? $site->find('cucina')->url() : null,
                     'image' => $this->thumbnail()->isNotEmpty()
                         ? $this->thumbnail()->toFile()?->url()
                         : null,
