@@ -2,9 +2,9 @@
 $experienceImage = $page->experience_image()->toFile();
 $experienceImage2 = $page->experience_image_2()->toFile();
 ?>
-<section style="padding:3rem 1.5rem 2rem">
+<section style="padding:1.5rem 1.5rem 0">
   <div class="container-site">
-    <div class="flex flex-col md:flex-row gap-16 items-center">
+    <div class="flex flex-col md:flex-row gap-16 items-center" style="gap:1.5rem">
       <!-- Text (left) -->
       <div class="md:w-[40%] shrink-0 reveal-left" style="opacity:0; transform:translateX(-60px)">
         <?php if ($page->experience_title()->isNotEmpty()): ?>
@@ -23,7 +23,7 @@ $experienceImage2 = $page->experience_image_2()->toFile();
       <!-- Photos (right) -->
       <div class="md:w-[60%] relative">
         <?php if ($experienceImage): ?>
-          <div class="parallax-photo-1 rounded-lg shadow-lg overflow-hidden" style="height:450px">
+          <div class="parallax-photo-1 rounded-lg shadow-lg overflow-hidden" style="height:280px">
             <?php snippet('components/responsive-image', [
                 'image' => $experienceImage,
                 'preset' => 'default',
@@ -34,7 +34,7 @@ $experienceImage2 = $page->experience_image_2()->toFile();
           </div>
         <?php endif ?>
         <?php if ($experienceImage2): ?>
-          <div class="parallax-photo-2 rounded-lg overflow-hidden mx-auto md:mx-0 md:ml-[5%] mt-5 relative" style="width:80%; height:300px; z-index:10; box-shadow: 0 25px 50px rgba(0,0,0,0.6), 0 10px 20px rgba(0,0,0,0.4)">
+          <div class="parallax-photo-2 rounded-lg overflow-hidden mx-auto md:mx-0 md:ml-[5%] mt-5 relative" style="width:80%; height:220px; z-index:10; box-shadow: 0 25px 50px rgba(0,0,0,0.6), 0 10px 20px rgba(0,0,0,0.4)">
             <?php snippet('components/responsive-image', [
                 'image' => $experienceImage2,
                 'preset' => 'default',
