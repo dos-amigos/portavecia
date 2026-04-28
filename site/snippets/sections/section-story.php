@@ -2,7 +2,7 @@
 $experienceImage = $page->experience_image()->toFile();
 $experienceImage2 = $page->experience_image_2()->toFile();
 ?>
-<section class="pt-32 md:pt-44 pb-16 md:pb-20 px-6 md:px-8">
+<section style="padding:3rem 1.5rem 2rem">
   <div class="container-site">
     <div class="flex flex-col md:flex-row gap-16 items-center">
       <!-- Text (left) -->

@@ -6,8 +6,8 @@ if ($title->isEmpty() && $text->isEmpty()) return;
 $textAnim = $reverse ? 'reveal-right' : 'reveal-left';
 $imgAnim = $reverse ? 'reveal-left' : 'reveal-right';
 ?>
-<section class="section-padding">
-  <div class="container-site grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<section style="padding:2rem 0">
+  <div class="container-site grid grid-cols-1 md:grid-cols-2 gap-16 items-center" style="gap:2rem">
     <div class="<?= $reverse ? 'md:order-2' : '' ?> <?= $textAnim ?>" style="opacity:0">
       <p class="label-text mb-3"><?= $block['title'] === 'fusion_title' ? 'Due Tradizioni' : '' ?></p>
       <h2 class="font-heading text-3xl md:text-4xl text-primary mb-6"><?= $title ?></h2>

@@ -1,4 +1,4 @@
-<footer class="bg-dark border-t border-light/10 mt-16">
+<footer class="bg-dark border-t border-light/10" style="margin-top:2rem">
   <div style="max-width:72rem;margin:0 auto;padding:4rem 1.5rem">
 
     <div style="display:grid;grid-template-columns:1fr;gap:3rem">
