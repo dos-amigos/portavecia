@@ -21,6 +21,9 @@ return [
     'johannschopplich.helpers.sitemap.enabled' => true,
     'johannschopplich.helpers.robots.enabled' => true,
 
+    // Exclude error page (404) from sitemap
+    'johannschopplich.helpers.sitemap.exclude.templates' => ['error'],
+
     // Meta defaults (fallback when page fields empty)
     'johannschopplich.helpers.meta.defaults' => function ($kirby, $site, $page) {
         return [
