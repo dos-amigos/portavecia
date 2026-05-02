@@ -1,12 +1,7 @@
 <?php
 
-// Conditional debug: enabled only when ?_pvdebug=<token> matches.
-// TODO: rimuovere dopo aver diagnosticato l'errore sitemap (issue: GSC HTTP 500).
-$pvDebugToken = '455dceb0ec2fa7a9cb5e1507466fb29a';
-$pvDebug = isset($_GET['_pvdebug']) && hash_equals($pvDebugToken, (string) $_GET['_pvdebug']);
-
 return [
-    'debug' => $pvDebug,
+    'debug' => false,
     'languages' => true,
     'languages.detect' => false,
 
