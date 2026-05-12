@@ -28,6 +28,9 @@
   <meta name="geo.position" content="45.2272;11.6574">
   <meta name="ICBM" content="45.2272, 11.6574">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="<?= $site->url() ?>/public/favicon.svg">
+
   <?= vite()->css('src/js/main.js') ?>
 </head>
 <body x-data="{ mobileOpen: false }" class="font-body bg-dark text-light pt-20">
