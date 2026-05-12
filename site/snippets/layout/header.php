@@ -29,8 +29,8 @@
   <meta name="ICBM" content="45.2272, 11.6574">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="<?= $site->url() ?>/public/logo_porta_vecia.png">
-  <link rel="apple-touch-icon" href="<?= $site->url() ?>/public/logo_porta_vecia.png">
+  <link rel="icon" type="image/png" href="<?= $site->url() ?>/logo_porta_vecia.png">
+  <link rel="apple-touch-icon" href="<?= $site->url() ?>/logo_porta_vecia.png">
 
   <?= vite()->css('src/js/main.js') ?>
 </head>
@@ -41,7 +41,7 @@
 
     <!-- Logo -->
     <a href="<?= $site->url() ?>" class="hover:opacity-80 transition-opacity flex items-center shrink-0">
-      <img src="<?= $site->url() ?>/public/logo_porta_vecia.png" alt="Porta Vecia" class="h-12 w-auto">
+      <img src="<?= $site->url() ?>/logo_porta_vecia.png" alt="Porta Vecia" class="h-12 w-auto">
     </a>
 
     <!-- Desktop nav -->
@@ -95,7 +95,7 @@
 >
   <!-- Logo in white at top -->
   <div class="absolute top-6 left-5 flex items-center">
-    <img src="<?= $site->url() ?>/public/logo_porta_vecia.png" alt="Porta Vecia" class="h-10 w-auto">
+    <img src="<?= $site->url() ?>/logo_porta_vecia.png" alt="Porta Vecia" class="h-10 w-auto">
   </div>
 
   <!-- Close button -->
