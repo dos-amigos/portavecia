@@ -70,7 +70,7 @@ return [
         'event.recurring' => 'Tutti i giorni',
         'home.experience_label' => 'L\'Esperienza',
         'about.fusion_label' => 'Due Tradizioni',
-        'hero.tagline' => 'Enoteca &<br>Cucina Cinese',
+        'hero.tagline' => 'Cucina Cinese &<br>Aperitivo',
         'footer.location' => 'Nel Cuore di Este',
         'contact.form.title' => 'Scrivici',
         'contact.form.name' => 'Nome',

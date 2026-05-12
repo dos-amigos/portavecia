@@ -69,7 +69,7 @@ return [
         'event.recurring' => 'Every day',
         'home.experience_label' => 'The Experience',
         'about.fusion_label' => 'Two Traditions',
-        'hero.tagline' => 'Wine Bar &<br>Chinese Cuisine',
+        'hero.tagline' => 'Chinese Cuisine &<br>Aperitivo',
         'footer.location' => 'In the Heart of Este',
         'contact.form.title' => 'Write to Us',
         'contact.form.name' => 'Name',
