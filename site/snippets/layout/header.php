@@ -28,6 +28,10 @@
   <meta name="geo.position" content="45.2272;11.6574">
   <meta name="ICBM" content="45.2272, 11.6574">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="<?= $site->url() ?>/logo_porta_vecia.png">
+  <link rel="apple-touch-icon" href="<?= $site->url() ?>/logo_porta_vecia.png">
+
   <?= vite()->css('src/js/main.js') ?>
 </head>
 <body x-data="{ mobileOpen: false }" class="font-body bg-dark text-light pt-20">
@@ -35,27 +39,9 @@
 <header class="fixed top-0 w-full z-50 bg-dark border-b border-light/10">
   <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-20">
 
-    <!-- Logo: tower + text -->
-    <a href="<?= $site->url() ?>" class="hover:opacity-80 transition-opacity flex items-center gap-2 shrink-0">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 48" fill="none" class="h-9 w-auto">
-        <g stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" fill="none">
-          <rect x="4" y="10" width="12" height="34" rx="0.3"/>
-          <line x1="4" y1="10" x2="4" y2="7.5"/><line x1="7" y1="10" x2="7" y2="7.5"/>
-          <line x1="10" y1="10" x2="10" y2="7.5"/><line x1="13" y1="10" x2="13" y2="7.5"/>
-          <line x1="16" y1="10" x2="16" y2="7.5"/>
-          <circle cx="10" cy="20" r="3.5"/>
-          <line x1="10" y1="17" x2="10" y2="20"/>
-          <line x1="10" y1="20" x2="12" y2="21"/>
-          <path d="M7 4 L10 1 L13 4"/>
-          <line x1="10" y1="1" x2="10" y2="7.5"/>
-          <path d="M8 44 L8 39 A2 2 0 0 1 12 39 L12 44"/>
-          <rect x="7" y="28" width="2" height="3" rx="0.5"/>
-          <rect x="11" y="28" width="2" height="3" rx="0.5"/>
-          <rect x="7" y="34" width="2" height="3" rx="0.5"/>
-          <rect x="11" y="34" width="2" height="3" rx="0.5"/>
-        </g>
-      </svg>
-      <span class="font-heading text-3xl whitespace-nowrap text-light">Porta Vecia</span>
+    <!-- Logo -->
+    <a href="<?= $site->url() ?>" class="hover:opacity-80 transition-opacity flex items-center shrink-0">
+      <img src="<?= $site->url() ?>/logo_porta_vecia.png" alt="Porta Vecia" class="h-12 w-auto">
     </a>
 
     <!-- Desktop nav -->
@@ -108,23 +94,8 @@
   aria-label="Mobile"
 >
   <!-- Logo in white at top -->
-  <div class="absolute top-6 left-5 flex items-center gap-2">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48" fill="none" class="h-7 w-auto">
-      <g stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" fill="none">
-        <path d="M12 2 L8 10 L16 10 Z"/>
-        <rect x="7" y="10" width="10" height="34" rx="0.3"/>
-        <line x1="7" y1="10" x2="7" y2="8"/><line x1="9.5" y1="10" x2="9.5" y2="8"/>
-        <line x1="14.5" y1="10" x2="14.5" y2="8"/><line x1="17" y1="10" x2="17" y2="8"/>
-        <path d="M10 44 L10 39 A2 2 0 0 1 14 39 L14 44"/>
-        <rect x="9.5" y="16" width="2" height="3" rx="1"/>
-        <rect x="12.5" y="16" width="2" height="3" rx="1"/>
-        <rect x="9.5" y="22" width="2" height="3" rx="1"/>
-        <rect x="12.5" y="22" width="2" height="3" rx="1"/>
-        <rect x="9.5" y="28" width="2" height="3" rx="1"/>
-        <rect x="12.5" y="28" width="2" height="3" rx="1"/>
-      </g>
-    </svg>
-    <span class="font-heading text-3xl text-light whitespace-nowrap">Porta Vecia</span>
+  <div class="absolute top-6 left-5 flex items-center">
+    <img src="<?= $site->url() ?>/logo_porta_vecia.png" alt="Porta Vecia" class="h-10 w-auto">
   </div>
 
   <!-- Close button -->
