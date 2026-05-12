@@ -5,3 +5,6 @@
 /vendor/
 .DS_Store
 Thumbs.db
+
+# Cartella di lavoro temporanea (screenshot, immagini da convertire)
+/images/menu/
